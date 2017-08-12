@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { StyleSheet, View, Text } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 import { Redirect, Route, withRouter } from 'react-router-native';
 
+// Routes
 import Home from './../Home/Home';
 import Start from './../Start/Start';
 
