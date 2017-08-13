@@ -1,14 +1,15 @@
 import { Provider } from 'react-redux';
 import React, { Component } from 'react';
-import { NativeRouter, Route } from 'react-router-native';
+import { DeepLinking, NativeRouter } from 'react-router-native';
 import { Persistor } from 'redux-persist';
 
+import { StackNavigation } from 'react-navigation';
 // Store
 import store from './../../store/store';
 
 // Views
 import Loading from './../Loading/Loading';
-import Wrapper from './../Wrapper/Wrapper';
+import Navigation from './../Navigation/Navigation';
 
 class App extends Component {
   constructor(props) {
@@ -40,9 +41,11 @@ class App extends Component {
 
     return ready ? (
       <NativeRouter>
-        <Provider store={store}>
-          <Wrapper />
-        </Provider>
+        <DeepLinking>
+          <Provider store={store}>
+            <Navigation />
+          </Provider>
+        </DeepLinking>
       </NativeRouter>
     )
     : (<Loading />);

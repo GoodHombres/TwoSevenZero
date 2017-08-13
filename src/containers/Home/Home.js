@@ -1,20 +1,38 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { StyleSheet, Text, TextInput, View } from 'react-native';
+import { FlatList, StyleSheet, Text, TextInput, View } from 'react-native';
 import { Link, withRouter } from 'react-router-native';
 import { setName } from './../../actions/player';
+import history from 'history';
+import StateList from './../../components/StateList/StateList';
+
+import colors from './../../utils/colors';
+import stateList from './../../fixtures/main.json';
 
 class Home extends Component {
+  constructor(props) {
+    super(props);
+  }
+
+  _renderStates({item}) {
+    return (
+      <StateList
+        item={item}
+        id={item.key}
+        title={item.name}
+      />
+    );
+  }
+
   render() {
     const { name, party } = this.props;
     return (
       <View style={styles.container}>
-        <Text style={styles.title}>Home Page</Text>
-        <Text style={styles.text}>My Name is: { name }</Text>
-        <Text style={styles.text}>I belong to the { party } party!</Text>
-        <Link to={'/start'}>
-          <Text>Restart</Text>
-        </Link>
+        <FlatList
+          data={stateList.states}
+          keyExtractor={item => item.id}
+          renderItem={this._renderStates.bind(this)}
+        />
       </View>
     );
   }
@@ -23,24 +41,10 @@ class Home extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: '#f3f6fa',
+    marginTop: 20,
   },
-  title: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  text: {
-    textAlign: 'center',
-    marginBottom: 5,
-  },
-  input: {
-    height: 40,
-    borderWidth: 1,
-    borderColor: 'black',
-    borderRadius: 4,
+  item: {
+    color: colors.foreground,
   },
 });
 
