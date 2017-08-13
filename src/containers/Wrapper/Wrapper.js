@@ -7,6 +7,8 @@ import { Redirect, Route, withRouter } from 'react-router-native';
 import Main from './../Main/Main';
 import Start from './../Start/Start';
 
+import colors from './../../utils/colors';
+
 class Wrapper extends Component {
   render() {
     const { name, party } = this.props;
@@ -36,7 +38,7 @@ const ProtectedRoute = ({ component: Component, partisan, ...rest }) => (
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: colors.background,
   },
 });
 

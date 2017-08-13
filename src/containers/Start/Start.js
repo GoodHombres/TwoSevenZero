@@ -17,6 +17,11 @@ import ButtonLink from './../../components/ButtonLink/ButtonLink';
 import css from './styles';
 
 class Start extends Component {
+  componentDidMount() {
+    console.log('Name: ' + this.props.name);
+    console.log('Party: ' + this.props.party);
+  }
+
   render() {
     const { name, party, chooseParty, enterName } = this.props;
 
