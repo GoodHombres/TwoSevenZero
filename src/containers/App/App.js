@@ -6,14 +6,14 @@ import { NativeRouter, Route } from 'react-router-native';
 import store from './../../store/store';
 
 // Views
-import Main from './../Main/Main';
+import Wrapper from './../Wrapper/Wrapper';
 
 class App extends Component {
   render() {
     return (
       <NativeRouter>
         <Provider store={store}>
-          <Main />
+          <Wrapper />
         </Provider>
       </NativeRouter>
     );

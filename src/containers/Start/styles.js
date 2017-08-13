@@ -1,4 +1,6 @@
-const css = {
+import colors from './../../utils/colors';
+
+export default {
   scroll: {
     flex: 1,
   },
@@ -10,16 +12,16 @@ const css = {
     height: 300,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#b062ea',
+    backgroundColor: colors.purple,
     width: '100%',
   },
   title: {
     fontSize: 48,
     fontWeight: 'bold',
-    color: '#fff',
+    color: colors.background,
   },
   subtitle: {
-    color: '#e4e4e4',
+    color: colors.lightgray,
     marginTop: 20,
     fontSize: 24,
   },
@@ -42,7 +44,7 @@ const css = {
   input: {
     padding: 10,
     borderWidth: 1,
-    borderColor: 'black',
+    borderColor: colors.foreground,
   },
   partyContainer: {
     marginTop: 20,
@@ -50,35 +52,33 @@ const css = {
     flexWrap: 'nowrap',
   },
   democratContainer: {
-    borderColor: '#5480f1',
+    borderColor: colors.democratic,
     borderWidth: 2,
     flex: 1,
   },
   republicanContainer: {
-    borderColor: '#e74c3c',
+    borderColor: colors.republican,
     borderWidth: 2,
     flex: 1,
   },
   democratContainerFill: {
-    backgroundColor: '#5480f1',
+    backgroundColor: colors.democratic,
   },
   republicanContainerFill: {
-    backgroundColor: '#e74c3c',
+    backgroundColor: colors.republican,
   },
   party: {
-    color: '#fff',
+    color: colors.background,
     fontSize: 24,
     textAlign: 'center',
     padding: 10,
   },
-  democrat: {
-    backgroundColor: '#5480f1',
+  democratic: {
+    backgroundColor: colors.democratic,
   },
   republican: {
-    backgroundColor: '#e74c3c',
+    backgroundColor: colors.republican,
   },
-  partyDemocrat: { color: '#5480f1' },
-  partyRepublican: { color: '#e74c3c' },
+  partyDemocrat: { color: colors.democratic },
+  partyRepublican: { color: colors.republican },
 };
-
-export default css;

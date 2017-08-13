@@ -43,10 +43,10 @@ class Start extends Component {
             <View style={styles.partyContainer}>
               {/* Democrat */}
               <TouchableOpacity
-                style={[styles.democratContainer, (party === 'democrat') && styles.democratContainerFill]}
-                onPress={() => chooseParty('democrat')}
+                style={[styles.democratContainer, (party === 'democratic') && styles.democratContainerFill]}
+                onPress={() => chooseParty('democratic')}
               >
-                <Text style={[styles.party, (party !== 'democrat') && styles.partyDemocrat]}>Democrat</Text>
+                <Text style={[styles.party, (party !== 'democratic') && styles.partyDemocrat]}>Democrat</Text>
               </TouchableOpacity>
               {/* Republican */}
               <TouchableOpacity

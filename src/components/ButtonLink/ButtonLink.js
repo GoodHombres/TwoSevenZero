@@ -7,6 +7,8 @@ import {
   View,
 } from 'react-native';
 
+import colors from './../../utils/colors';
+
 class ButtonLink extends Component {
   render() {
     const { children, disabled, to } = this.props;
@@ -31,20 +33,20 @@ class ButtonLink extends Component {
 
 const styles = StyleSheet.create({
   disabled: {
-    backgroundColor: '#666',
+    backgroundColor: colors.gray,
   },
   disabledText: {
-    color: '#e4e4e4',
+    color: colors.lightgray,
   },
   link: {
     padding: 10,
     width: '100%',
     marginTop: 20,
-    backgroundColor: '#000',
+    backgroundColor: colors.foreground,
   },
   text: {
     fontSize: 24,
-    color: '#fff',
+    color: colors.background,
     textAlign: 'center',
   },
 });
