@@ -1,42 +1,50 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { StyleSheet, View } from 'react-native';
-import { Redirect, Route, withRouter } from 'react-router-native';
+import { StyleSheet, Text, TextInput, View } from 'react-native';
+import { Link, withRouter } from 'react-router-native';
+import { setName } from './../../actions/player';
+import ScrollableTabView from 'react-native-scrollable-tab-view';
 
-// Routes
 import Home from './../Home/Home';
 import Start from './../Start/Start';
+import TabBar from './../TabBar/TabBar';
 
 class Main extends Component {
   render() {
     const { name, party } = this.props;
-
     return (
-      <View style={styles.container}>
-        <ProtectedRoute partisan={party && name} exact path={'/'} component={Home} />
-        <Route path={'/start'} component={Start} />
-      </View>
+      <ScrollableTabView
+        tabBarPosition={'bottom'}
+        renderTabBar={() => <TabBar />}
+      >
+        <Home tabLabel={'ios-compass'} />
+        <Start tabLabel={'ios-person'} />
+      </ScrollableTabView>
     );
   }
 }
 
-const ProtectedRoute = ({ component: Component, partisan, ...rest }) => (
-  <Route {...rest} render={ props => (
-    partisan ? (
-      <Component />
-    ) : (
-      <Redirect to={{
-        pathname: '/start',
-        state: { from: props.location },
-      }} />
-    )
-  )} />
-);
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: '#f3f6fa',
+  },
+  title: {
+    fontSize: 20,
+    textAlign: 'center',
+    margin: 10,
+  },
+  text: {
+    textAlign: 'center',
+    marginBottom: 5,
+  },
+  input: {
+    height: 40,
+    borderWidth: 1,
+    borderColor: 'black',
+    borderRadius: 4,
   },
 });
 
@@ -45,6 +53,14 @@ const mapStateToProps = state => {
     name: state.player.name,
     party: state.player.party,
   };
-};
+}
 
-export default withRouter(connect(mapStateToProps)(Main));
+const mapDispatchToProps = dispatch => {
+  return {
+    changePlayerName: name => {
+      dispatch(setName(name));
+    },
+  };
+}
+
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Main));
