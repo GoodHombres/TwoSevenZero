@@ -1,18 +1,24 @@
 import React, { PureComponent } from 'react';
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import colors from './../../utils/colors';
-import { Link } from 'react-router-native';
 
 class StateList extends PureComponent {
+  _onPress() {
+    const { id, onPressState } = this.props;
+
+    // Call parent function and send in state id
+    onPressState(id);
+  }
+
   render() {
     const { id, title } = this.props;
 
     return (
-      <Link to={`/state/${id}`} style={styles.container} component={TouchableOpacity}>
+      <TouchableOpacity style={styles.container} onPress={this._onPress.bind(this)}>
         <View>
           <Text style={styles.text}>{title}</Text>
         </View>
-      </Link>
+      </TouchableOpacity>
     );
   }
 }

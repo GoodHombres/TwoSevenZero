@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import {
+  Button,
   Text,
   TextInput,
   TouchableOpacity,
@@ -8,8 +9,8 @@ import {
   StyleSheet,
   View,
 } from 'react-native';
-import { withRouter } from 'react-router-native';
 import { setName, setParty } from './../../actions/player';
+import { setRoot } from './../../actions/navigation';
 
 // Local components
 import ButtonLink from './../../components/ButtonLink/ButtonLink';
@@ -17,13 +18,29 @@ import ButtonLink from './../../components/ButtonLink/ButtonLink';
 import css from './styles';
 
 class Start extends Component {
+  static navigationOptions = {
+    header: null
+  }
+
+  constructor(props) {
+    super(props);
+
+    this.beginGame = this.beginGame.bind(this);
+  }
+
   componentDidMount() {
     console.log('Name: ' + this.props.name);
     console.log('Party: ' + this.props.party);
   }
 
+  beginGame() {
+    const { startGame } = this.props;
+
+    startGame();
+  }
+
   render() {
-    const { name, party, chooseParty, enterName } = this.props;
+    const { name, party, chooseParty, enterName, startGame } = this.props;
 
     return (
       <ScrollView style={styles.scroll}>
@@ -62,7 +79,7 @@ class Start extends Component {
               </TouchableOpacity>
             </View>
             {/* Submit */}
-            <ButtonLink to={'/'} disabled={(!name || !party)}>
+            <ButtonLink disabled={(!name || !party)} onPressButton={this.beginGame}>
               Begin Campaign
             </ButtonLink>
           </View>
@@ -83,6 +100,9 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
   return {
+    startGame: () => {
+      dispatch(setRoot('Main'));
+    },
     enterName: name => {
       dispatch(setName(name));
     },
@@ -92,4 +112,4 @@ const mapDispatchToProps = dispatch => {
   };
 }
 
-export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Start));
+export default connect(mapStateToProps, mapDispatchToProps)(Start);

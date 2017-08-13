@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-native';
 import {
   StyleSheet,
   Text,
@@ -10,6 +9,13 @@ import {
 import colors from './../../utils/colors';
 
 class ButtonLink extends Component {
+  _onPress() {
+    console.log(this.props);
+    const { disabled, onPressButton } = this.props;
+
+    !disabled && onPressButton();
+  }
+
   render() {
     const { children, disabled, to } = this.props;
 
@@ -20,11 +26,11 @@ class ButtonLink extends Component {
         </Text>
       </View>
     ) : (
-      <Link to={to} style={styles.link} component={TouchableOpacity}>
+      <TouchableOpacity style={styles.link} onPress={this._onPress.bind(this)}>
         <Text style={styles.text}>
           { children }
         </Text>
-      </Link>
+      </TouchableOpacity>
     );
 
     return link;

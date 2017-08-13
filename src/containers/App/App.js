@@ -1,6 +1,5 @@
 import { Provider } from 'react-redux';
 import React, { Component } from 'react';
-import { DeepLinking, NativeRouter } from 'react-router-native';
 import { Persistor } from 'redux-persist';
 
 import { StackNavigation } from 'react-navigation';
@@ -9,7 +8,7 @@ import store from './../../store/store';
 
 // Views
 import Loading from './../Loading/Loading';
-import Navigation from './../Navigation/Navigation';
+import NavigationState from './../Navigation/Navigation';
 
 class App extends Component {
   constructor(props) {
@@ -40,15 +39,10 @@ class App extends Component {
     const { ready } = this.state;
 
     return ready ? (
-      <NativeRouter>
-        <DeepLinking>
-          <Provider store={store}>
-            <Navigation />
-          </Provider>
-        </DeepLinking>
-      </NativeRouter>
-    )
-    : (<Loading />);
+      <Provider store={store}>
+        <NavigationState />
+      </Provider>
+    ) : (<Loading />);
   }
 }
 

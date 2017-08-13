@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { FlatList, StyleSheet, Text, TextInput, View } from 'react-native';
-import { Link, withRouter } from 'react-router-native';
-import { setName } from './../../actions/player';
-import history from 'history';
+import { push } from './../../actions/navigation';
 import StateList from './../../components/StateList/StateList';
 
 import colors from './../../utils/colors';
@@ -14,12 +12,19 @@ class Home extends Component {
     super(props);
   }
 
+  onStatePress(id) {
+    const { goTo } = this.props;
+
+    goTo('State', { id });
+  }
+
   _renderStates({item}) {
     return (
       <StateList
         item={item}
         id={item.key}
         title={item.name}
+        onPressState={this.onStatePress.bind(this)}
       />
     );
   }
@@ -57,10 +62,8 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    changePlayerName: name => {
-      dispatch(setName(name));
-    },
+    goTo: (page, params = {}) => dispatch(push(page, params)),
   };
 }
 
-export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Home));
+export default connect(mapStateToProps, mapDispatchToProps)(Home);

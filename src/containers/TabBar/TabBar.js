@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
-import { withRouter } from 'react-router-native';
 import { connect } from 'react-redux';
 import colors from './../../utils/colors';
 
@@ -89,4 +88,4 @@ const mapStateToProps = state => {
   };
 };
 
-export default withRouter(connect(mapStateToProps)(TabBar));
+export default connect(mapStateToProps)(TabBar);

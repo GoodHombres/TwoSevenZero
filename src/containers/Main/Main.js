@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { StyleSheet, Text, TextInput, View } from 'react-native';
-import { Link, withRouter } from 'react-router-native';
 import { setName } from './../../actions/player';
 import ScrollableTabView from 'react-native-scrollable-tab-view';
 
@@ -10,6 +9,10 @@ import Player from './../Player/Player';
 import TabBar from './../TabBar/TabBar';
 
 class Main extends Component {
+  static navigationOptions = {
+    header: null
+  }
+
   render() {
     const { name, party } = this.props;
     return (
@@ -63,4 +66,4 @@ const mapDispatchToProps = dispatch => {
   };
 }
 
-export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Main));
+export default connect(mapStateToProps, mapDispatchToProps)(Main);
