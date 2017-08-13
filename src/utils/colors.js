@@ -1,5 +1,5 @@
 export default {
-  democrat: '#5480f1',
+  democratic: '#5480f1',
   republican: '#e74c3c',
   foreground: '#000',
   background: '#fff',

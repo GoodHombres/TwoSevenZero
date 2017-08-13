@@ -41,7 +41,6 @@ class TabBar extends Component {
       <View style={[styles.bar, style]}>
         {
           tabs.map((tab, index) => {
-            console.log(tab);
             return (
               <TouchableOpacity key={tab} style={styles.tab} onPress={() => goToPage(index)}>
                 <Icon

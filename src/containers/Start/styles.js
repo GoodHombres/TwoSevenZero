@@ -1,6 +1,6 @@
 import colors from './../../utils/colors';
 
-const css = {
+export default {
   scroll: {
     flex: 1,
   },
@@ -52,7 +52,7 @@ const css = {
     flexWrap: 'nowrap',
   },
   democratContainer: {
-    borderColor: colors.democrat,
+    borderColor: colors.democratic,
     borderWidth: 2,
     flex: 1,
   },
@@ -62,7 +62,7 @@ const css = {
     flex: 1,
   },
   democratContainerFill: {
-    backgroundColor: colors.democrat,
+    backgroundColor: colors.democratic,
   },
   republicanContainerFill: {
     backgroundColor: colors.republican,
@@ -73,14 +73,12 @@ const css = {
     textAlign: 'center',
     padding: 10,
   },
-  democrat: {
-    backgroundColor: colors.democrat,
+  democratic: {
+    backgroundColor: colors.democratic,
   },
   republican: {
     backgroundColor: colors.republican,
   },
-  partyDemocrat: { color: colors.democrat },
+  partyDemocrat: { color: colors.democratic },
   partyRepublican: { color: colors.republican },
 };
-
-export default css;

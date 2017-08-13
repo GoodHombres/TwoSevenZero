@@ -6,7 +6,7 @@ import { setName } from './../../actions/player';
 import ScrollableTabView from 'react-native-scrollable-tab-view';
 
 import Home from './../Home/Home';
-import Start from './../Start/Start';
+import Player from './../Player/Player';
 import TabBar from './../TabBar/TabBar';
 
 class Main extends Component {
@@ -18,7 +18,7 @@ class Main extends Component {
         renderTabBar={() => <TabBar />}
       >
         <Home tabLabel={'ios-compass'} />
-        <Start tabLabel={'ios-person'} />
+        <Player tabLabel={'ios-person'} />
       </ScrollableTabView>
     );
   }
