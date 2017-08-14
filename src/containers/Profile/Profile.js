@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { Alert, ScrollView, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
 import { connect } from 'react-redux';
-import { withRouter } from 'react-router-native';
 import { setName, setParty } from './../../actions/player';
+import { setRoot } from './../../actions/navigation';
 import colors from './../../utils/colors';
 import capitalize from './../../utils/capitalize';
 
-class Player extends Component {
+class Profile extends Component {
   constructor(props) {
     super(props);
 
@@ -14,7 +14,7 @@ class Player extends Component {
   }
 
   resetGame() {
-    const { changeName, switchParty } = this.props;
+    const { changeName, resetGame, switchParty } = this.props;
 
     Alert.alert(
       'Reset Game?',
@@ -29,6 +29,7 @@ class Player extends Component {
           text: 'OK',
           onPress: () => {
             // Reset name and party
+            resetGame();
             changeName(null);
             switchParty(null);
           },
@@ -109,9 +110,10 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
   return {
+    resetGame: () => dispatch(setRoot('Start')),
     changeName: (name) => dispatch(setName(name)),
     switchParty: (party) => dispatch(setParty(party)),
   };
 };
 
-export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Player));
+export default connect(mapStateToProps, mapDispatchToProps)(Profile);

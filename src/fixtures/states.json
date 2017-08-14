@@ -1,0 +1,514 @@
+{
+  "colorado": [
+    {
+      "id": 0,
+      "points": 34,
+      "difficulty": "hard",
+      "width": "full-width"
+    },
+    {
+      "id": 1,
+      "points": 22,
+      "difficulty": "medium",
+      "width": "half-width"
+    },
+    {
+      "id": 2,
+      "points": 22,
+      "difficulty": "medium",
+      "width": "half-width"
+    },
+    {
+      "id": 3,
+      "points": 11,
+      "difficulty": "easy",
+      "category": "state",
+      "width": "half-width"
+    },
+    {
+      "id": 4,
+      "points": 11,
+      "difficulty": "easy",
+      "width": "half-width"
+    }
+  ],
+  "florida": [
+    {
+      "id": 0,
+      "points": 28,
+      "difficulty": "hard",
+      "width": "full-width"
+    },
+    {
+      "id": 1,
+      "points": 27,
+      "difficulty": "medium",
+      "width": "half-width"
+    },
+    {
+      "id": 2,
+      "points": 24,
+      "difficulty": "medium",
+      "width": "half-width"
+    },
+    {
+      "id": 3,
+      "points": 8,
+      "difficulty": "easy",
+      "width": "quarter-width"
+    },
+    {
+      "id": 4,
+      "points": 6,
+      "difficulty": "easy",
+      "width": "quarter-width"
+    },
+    {
+      "id": 5,
+      "points": 4,
+      "difficulty": "easy",
+      "width": "quarter-width"
+    },
+    {
+      "id": 6,
+      "points": 3,
+      "difficulty": "easy",
+      "width": "quarter-width"
+    }
+  ],
+  "iowa": [
+    {
+      "id": 0,
+      "points": 23,
+      "difficulty": "hard",
+      "width": "full-width"
+    },
+    {
+      "id": 1,
+      "points": 18,
+      "difficulty": "hard",
+      "width": "half-width"
+    },
+    {
+      "id": 2,
+      "points": 15,
+      "difficulty": "hard",
+      "width": "half-width"
+    },
+    {
+      "id": 3,
+      "points": 13,
+      "difficulty": "medium",
+      "width": "half-width"
+    },
+    {
+      "id": 4,
+      "points": 11,
+      "difficulty": "medium",
+      "width": "half-width"
+    },
+    {
+      "id": 5,
+      "points": 9,
+      "difficulty": "easy",
+      "category": "state",
+      "width": "quarter-width"
+    },
+    {
+      "id": 6,
+      "points": 6,
+      "difficulty": "easy",
+      "width": "quarter-width"
+    },
+    {
+      "id": 7,
+      "points": 4,
+      "difficulty": "easy",
+      "width": "quarter-width"
+    },
+    {
+      "id": 8,
+      "points": 1,
+      "difficulty": "easy",
+      "width": "quarter-width"
+    }
+  ],
+  "nevada": [
+    {
+      "id": 0,
+      "points": 30,
+      "difficulty": "hard",
+      "width": "full-width"
+    },
+    {
+      "id": 1,
+      "points": 22,
+      "difficulty": "medium",
+      "width": "third-width"
+    },
+    {
+      "id": 2,
+      "points": 19,
+      "difficulty": "medium",
+      "width": "third-width"
+    },
+    {
+      "id": 3,
+      "points": 17,
+      "difficulty": "medium",
+      "width": "third-width"
+    },
+    {
+      "id": 4,
+      "points": 6,
+      "difficulty": "easy",
+      "width": "third-width"
+    },
+    {
+      "id": 5,
+      "points": 4,
+      "difficulty": "easy",
+      "category": "state",
+      "width": "third-width"
+    },
+    {
+      "id": 6,
+      "points": 2,
+      "difficulty": "easy",
+      "category": "state",
+      "width": "third-width"
+    }
+  ],
+  "north-carolina": [
+    {
+      "id": 0,
+      "points": 25,
+      "difficulty": "hard",
+      "width": "full-width"
+    },
+    {
+      "id": 1,
+      "points": 18,
+      "difficulty": "medium",
+      "width": "half-width"
+    },
+    {
+      "id": 2,
+      "points": 17,
+      "difficulty": "medium",
+      "width": "half-width"
+    },
+    {
+      "id": 3,
+      "points": 15,
+      "difficulty": "easy",
+      "width": "third-width"
+    },
+    {
+      "id": 4,
+      "points": 13,
+      "difficulty": "easy",
+      "width": "third-width"
+    },
+    {
+      "id": 5,
+      "points": 12,
+      "difficulty": "easy",
+      "category": "state",
+      "width": "third-width"
+    }
+  ],
+  "new-hampshire": [
+    {
+      "id": 0,
+      "points": 19,
+      "difficulty": "hard",
+      "width": "half-width"
+    },
+    {
+      "id": 1,
+      "points": 17,
+      "difficulty": "hard",
+      "width": "half-width"
+    },
+    {
+      "id": 2,
+      "points": 14,
+      "difficulty": "medium",
+      "width": "third-width"
+    },
+    {
+      "id": 3,
+      "points": 12,
+      "difficulty": "medium",
+      "width": "third-width"
+    },
+    {
+      "id": 4,
+      "points": 11,
+      "difficulty": "medium",
+      "width": "third-width"
+    },
+    {
+      "id": 5,
+      "points": 9,
+      "difficulty": "easy",
+      "category": "state",
+      "width": "third-width"
+    },
+    {
+      "id": 6,
+      "points": 9,
+      "difficulty": "easy",
+      "category": "state",
+      "width": "third-width"
+    },
+    {
+      "id": 7,
+      "points": 9,
+      "difficulty": "easy",
+      "category": "state",
+      "width": "third-width"
+    }
+  ],
+  "ohio": [
+    {
+      "id": 0,
+      "points": 26,
+      "difficulty": "hard",
+      "width": "full-width"
+    },
+    {
+      "id": 1,
+      "points": 18,
+      "difficulty": "medium",
+      "width": "third-width"
+    },
+    {
+      "id": 2,
+      "points": 16,
+      "difficulty": "medium",
+      "width": "third-width"
+    },
+    {
+      "id": 3,
+      "points": 16,
+      "difficulty": "medium",
+      "width": "third-width"
+    },
+    {
+      "id": 4,
+      "points": 9,
+      "difficulty": "easy",
+      "width": "quarter-width"
+    },
+    {
+      "id": 5,
+      "points": 8,
+      "difficulty": "easy",
+      "category": "state",
+      "width": "quarter-width"
+    },
+    {
+      "id": 6,
+      "points": 4,
+      "difficulty": "easy",
+      "category": "state",
+      "width": "quarter-width"
+    },
+    {
+      "id": 7,
+      "points": 3,
+      "difficulty": "easy",
+      "category": "state",
+      "width": "quarter-width"
+    }
+  ],
+  "pennsylvania": [
+    {
+      "id": 0,
+      "points": 15,
+      "difficulty": "hard",
+      "width": "third-width"
+    },
+    {
+      "id": 1,
+      "points": 13,
+      "difficulty": "hard",
+      "width": "third-width"
+    },
+    {
+      "id": 2,
+      "points": 12,
+      "difficulty": "hard",
+      "width": "third-width"
+    },
+    {
+      "id": 3,
+      "points": 11,
+      "difficulty": "medium",
+      "width": "quarter-width"
+    },
+    {
+      "id": 4,
+      "points": 10,
+      "difficulty": "medium",
+      "width": "quarter-width"
+    },
+    {
+      "id": 5,
+      "points": 10,
+      "difficulty": "medium",
+      "width": "quarter-width"
+    },
+    {
+      "id": 6,
+      "points": 9,
+      "difficulty": "medium",
+      "width": "quarter-width"
+    },
+    {
+      "id": 7,
+      "points": 8,
+      "difficulty": "easy",
+      "width": "quarter-width"
+    },
+    {
+      "id": 8,
+      "points": 5,
+      "difficulty": "easy",
+      "width": "quarter-width"
+    },
+    {
+      "id": 9,
+      "points": 4,
+      "difficulty": "easy",
+      "width": "quarter-width"
+    },
+    {
+      "id": 10,
+      "points": 3,
+      "difficulty": "easy",
+      "width": "quarter-width"
+    }
+  ],
+  "virginia": [
+    {
+      "id": 0,
+      "points": 18,
+      "difficulty": "hard",
+      "width": "half-width"
+    },
+    {
+      "id": 1,
+      "points": 15,
+      "difficulty": "hard",
+      "width": "half-width"
+    },
+    {
+      "id": 2,
+      "points": 12,
+      "difficulty": "medium",
+      "width": "quarter-width"
+    },
+    {
+      "id": 3,
+      "points": 10,
+      "difficulty": "medium",
+      "width": "quarter-width"
+    },
+    {
+      "id": 4,
+      "points": 9,
+      "difficulty": "medium",
+      "width": "quarter-width"
+    },
+    {
+      "id": 5,
+      "points": 9,
+      "difficulty": "medium",
+      "width": "quarter-width"
+    },
+    {
+      "id": 6,
+      "points": 8,
+      "difficulty": "easy",
+      "width": "quarter-width"
+    },
+    {
+      "id": 7,
+      "points": 7,
+      "difficulty": "easy",
+      "width": "quarter-width"
+    },
+    {
+      "id": 8,
+      "points": 6,
+      "difficulty": "easy",
+      "width": "quarter-width"
+    },
+    {
+      "id": 9,
+      "points": 6,
+      "difficulty": "easy",
+      "width": "quarter-width"
+    }
+  ],
+  "wisconsin": [
+    {
+      "id": 0,
+      "points": 30,
+      "difficulty": "hard",
+      "width": "full-width"
+    },
+    {
+      "id": 1,
+      "points": 15,
+      "difficulty": "medium",
+      "width": "half-width"
+    },
+    {
+      "id": 2,
+      "points": 15,
+      "difficulty": "medium",
+      "width": "half-width"
+    },
+    {
+      "id": 3,
+      "points": 10,
+      "difficulty": "medium",
+      "width": "half-width"
+    },
+    {
+      "id": 4,
+      "points": 10,
+      "difficulty": "medium",
+      "width": "half-width"
+    },
+    {
+      "id": 5,
+      "points": 5,
+      "difficulty": "easy",
+      "category": "state",
+      "width": "quarter-width"
+    },
+    {
+      "id": 6,
+      "points": 5,
+      "difficulty": "easy",
+      "width": "quarter-width"
+    },
+    {
+      "id": 7,
+      "points": 5,
+      "difficulty": "easy",
+      "width": "quarter-width"
+    },
+    {
+      "id": 8,
+      "points": 5,
+      "difficulty": "easy",
+      "width": "quarter-width"
+    }
+  ]
+}
