@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
-import { Link, withRouter } from 'react-router-native';
+import { FlatList, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { connect } from 'react-redux';
-import { pop, push } from './../../actions/navigation';
 
+import StateList from './../../components/StateList/StateList';
+
+import { pop, push } from './../../actions/navigation';
+import states from './../../fixtures/states.json';
 import stateList from './../../fixtures/main.json';
 
 class State extends Component {
@@ -11,10 +13,31 @@ class State extends Component {
     title: stateList.states[navigation.state.params.id].name,
   });
 
+  _onPressItem(id) {
+    console.log(`Pressed item ${id}!`)
+  }
+
+  _renderItems(item) {
+    return (
+      <StateList
+        item={item}
+        id={item.item.id}
+        title={`Percentage Awarded: ${item.item.points}%`}
+        onPressState={this._onPressItem.bind(this)}
+      />
+    );
+  }
+
   render() {
+    const state = stateList.states[this.props.navigation.state.params.id].id;
+
     return (
       <View style={styles.container}>
-        <Text>state</Text>
+        <FlatList
+          data={states[state]}
+          keyExtractor={item => item.id}
+          renderItem={this._renderItems.bind(this)}
+        />
       </View>
     );
   }
@@ -22,7 +45,6 @@ class State extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    marginTop: 20,
   },
 });
 

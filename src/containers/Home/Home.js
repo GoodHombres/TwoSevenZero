@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { FlatList, StyleSheet, Text, TextInput, View } from 'react-native';
-import { push } from './../../actions/navigation';
-import StateList from './../../components/StateList/StateList';
 
+import { push } from './../../actions/mainNavigation';
+import StateList from './../../components/StateList/StateList';
 import colors from './../../utils/colors';
 import stateList from './../../fixtures/main.json';
 
@@ -46,7 +46,6 @@ class Home extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    marginTop: 20,
   },
   item: {
     color: colors.foreground,

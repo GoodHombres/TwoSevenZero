@@ -6,7 +6,7 @@ import { setRoot } from './../../actions/navigation';
 import colors from './../../utils/colors';
 import capitalize from './../../utils/capitalize';
 
-class Player extends Component {
+class Profile extends Component {
   constructor(props) {
     super(props);
 
@@ -116,4 +116,4 @@ const mapDispatchToProps = dispatch => {
   };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Player);
+export default connect(mapStateToProps, mapDispatchToProps)(Profile);

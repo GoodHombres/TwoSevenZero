@@ -28,11 +28,6 @@ class Start extends Component {
     this.beginGame = this.beginGame.bind(this);
   }
 
-  componentDidMount() {
-    console.log('Name: ' + this.props.name);
-    console.log('Party: ' + this.props.party);
-  }
-
   beginGame() {
     const { startGame } = this.props;
 

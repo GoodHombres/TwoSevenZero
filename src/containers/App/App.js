@@ -8,7 +8,8 @@ import store from './../../store/store';
 
 // Views
 import Loading from './../Loading/Loading';
-import NavigationState from './../Navigation/Navigation';
+// import NavigationState from './../Navigation/Navigation';
+import AppNavigation from './../../views/AppNavigation/AppNavigation';
 
 class App extends Component {
   constructor(props) {
@@ -40,7 +41,7 @@ class App extends Component {
 
     return ready ? (
       <Provider store={store}>
-        <NavigationState />
+        <AppNavigation />
       </Provider>
     ) : (<Loading />);
   }
