@@ -5,400 +5,936 @@
       "category": "History",
       "question": "From what country did the United States obtain it's independence from?",
       "hint": "That country's primary language is also English.",
-      "wrongOne": "Spain",
-      "wrongTwo": "Canada",
-      "wrongThree": "France",
-      "answer": "Great Britain"
+      "responses": [
+        {
+          "correct": false,
+          "text": "Spain"
+        },
+        {
+          "correct": false,
+          "text": "Canada"
+        },
+        {
+          "correct": false,
+          "text": "France"
+        },
+        {
+          "correct": true,
+          "text": "Great Britain"
+        }
+      ]
     },
     {
       "id": 1,
       "category": "People",
       "question": "Who was the first President of the United States?",
       "hint": "He is featured in the $1 bill.",
-      "wrongOne": "Abraham Lincoln",
-      "wrongTwo": "Thomas Jefferson",
-      "wrongThree": "Alexander Hamilton",
-      "answer": "George Washington"
+      "responses": [
+        {
+          "correct": false,
+          "text": "Abraham Lincoln"
+        },
+        {
+          "correct": false,
+          "text": "Thomas Jefferson"
+        },
+        {
+          "correct": false,
+          "text": "Alexander Hamilton"
+        },
+        {
+          "correct": true,
+          "text": "George Washington"
+        }
+      ]
     },
     {
       "id": 2,
       "category": "Locations",
       "question": "Where is the White House located?",
       "hint": "The place is not a state.",
-      "wrongOne": "Pennsylvania",
-      "wrongTwo": "New York",
-      "wrongThree": "Washington",
-      "answer": "Washington D.C."
+      "responses": [
+        {
+          "correct": false,
+          "text": "Pennsylvania"
+        },
+        {
+          "correct": false,
+          "text": "New York"
+        },
+        {
+          "correct": false,
+          "text": "Washington"
+        },
+        {
+          "correct": true,
+          "text": "Washington D.C."
+        }
+      ]
     },
     {
       "id": 3,
       "category": "Government",
       "question": "Which of the following is not a branch of the United State's government?",
       "hint": "Does the United States have a king or queen?",
-      "wrongOne": "Executive",
-      "wrongTwo": "Legislative",
-      "wrongThree": "Judicial",
-      "answer": "Royal"
+      "responses": [
+        {
+          "correct": false,
+          "text": "Executive"
+        },
+        {
+          "correct": false,
+          "text": "Legislative"
+        },
+        {
+          "correct": false,
+          "text": "Judicial"
+        },
+        {
+          "correct": true,
+          "text": "Royal"
+        }
+      ]
     },
     {
       "id": 4,
       "category": "History",
       "question": "This country had also undergone a revolution around the same time the United States had.",
       "hint": "Does the United States have a king or queen?",
-      "wrongOne": "Mexico",
-      "wrongTwo": "Canada",
-      "wrongThree": "Great Britain",
-      "answer": "France"
+      "responses": [
+        {
+          "correct": false,
+          "text": "Mexico"
+        },
+        {
+          "correct": false,
+          "text": "Canada"
+        },
+        {
+          "correct": false,
+          "text": "Great Britain"
+        },
+        {
+          "correct": true,
+          "text": "France"
+        }
+      ]
     },
     {
       "id": 5,
       "category": "Locations",
       "question": "Which of the following is a state?",
       "hint": "It shares the name of the first President of the United States.",
-      "wrongOne": "Puerto Rico",
-      "wrongTwo": "Guam",
-      "wrongThree": "Washington D.C.",
-      "answer": "Washington"
+      "responses": [
+        {
+          "correct": false,
+          "text": "Puerto Rico"
+        },
+        {
+          "correct": false,
+          "text": "Guam"
+        },
+        {
+          "correct": false,
+          "text": "Washington D.C."
+        },
+        {
+          "correct": true,
+          "text": "Washington"
+        }
+      ]
     },
     {
       "id": 6,
       "category": "Government",
       "question": "How many states make up the United States of America?",
       "hint": "There is a star for each state in the United States flag.",
-      "wrongOne": "48",
-      "wrongTwo": "13",
-      "wrongThree": "51",
-      "answer": "50"
+      "responses": [
+        {
+          "correct": false,
+          "text": "48"
+        },
+        {
+          "correct": false,
+          "text": "13"
+        },
+        {
+          "correct": false,
+          "text": "51"
+        },
+        {
+          "correct": true,
+          "text": "50"
+        }
+      ]
     },
     {
       "id": 7,
       "category": "History",
       "question": "When did the United States declare its independence?",
       "hint": "The national holiday Independence Day commemorates it.",
-      "wrongOne": "January 1st",
-      "wrongTwo": "July 25th",
-      "wrongThree": "September 3rd",
-      "answer": "July 4th"
+      "responses": [
+        {
+          "correct": false,
+          "text": "January 1st"
+        },
+        {
+          "correct": false,
+          "text": "July 25th"
+        },
+        {
+          "correct": false,
+          "text": "September 3rd"
+        },
+        {
+          "correct": true,
+          "text": "July 4th"
+        }
+      ]
     },
     {
       "id": 8,
       "category": "Government",
       "question": "What are the two major parties in the United States",
       "hint": "They're on the first screen of this app!",
-      "wrongOne": "Know-Nothing and Southern Democrat",
-      "wrongTwo": "Progressive and Republican",
-      "wrongThree": "Democrat and Whig",
-      "answer": "Democrat and Republican"
+      "responses": [
+        {
+          "correct": false,
+          "text": "Know-Nothing and Southern Democrat"
+        },
+        {
+          "correct": false,
+          "text": "Progressive and Republican"
+        },
+        {
+          "correct": false,
+          "text": "Democrat and Whig"
+        },
+        {
+          "correct": true,
+          "text": "Democrat and Republican"
+        }
+      ]
     },
     {
       "id": 9,
       "category": "People",
       "question": "Who served more than two terms as President?",
       "hint": "He served during the Great Depression and World War II.",
-      "wrongOne": "George Washington",
-      "wrongTwo": "Ronald Reagan",
-      "wrongThree": "Theodore Roosevelt",
-      "answer": "Franklin D. Roosevelt"
+      "responses": [
+        {
+          "correct": false,
+          "text": "George Washington"
+        },
+        {
+          "correct": false,
+          "text": "Ronald Reagan"
+        },
+        {
+          "correct": false,
+          "text": "Theodore Roosevelt"
+        },
+        {
+          "correct": true,
+          "text": "Franklin D. Roosevelt"
+        }
+      ]
     },
     {
       "id": 10,
       "category": "People",
       "question": "Who was both the 22nd and 24th President of the United States?",
       "hint": "His last name is also the name of a city in Ohio.",
-      "wrongOne": "Ulysses S. Grant",
-      "wrongTwo": "Theodore Roosevelt",
-      "wrongThree": "Franklin D. Roosevelt",
-      "answer": "Grover Cleveland"
+      "responses": [
+        {
+          "correct": false,
+          "text": "Ulysses S. Grant"
+        },
+        {
+          "correct": false,
+          "text": "Theodore Roosevelt"
+        },
+        {
+          "correct": false,
+          "text": "Franklin D. Roosevelt"
+        },
+        {
+          "correct": true,
+          "text": "Grover Cleveland"
+        }
+      ]
     },
     {
       "id": 11,
       "category": "People",
       "question": "Who was the first President to have lived in the White House?",
       "hint": "His son would later become President.",
-      "wrongOne": "John Quincy Adams",
-      "wrongTwo": "Thomas Jefferson",
-      "wrongThree": "George Washington",
-      "answer": "John Adams"
+      "responses": [
+        {
+          "correct": false,
+          "text": "John Quincy Adams"
+        },
+        {
+          "correct": false,
+          "text": "Thomas Jefferson"
+        },
+        {
+          "correct": false,
+          "text": "George Washington"
+        },
+        {
+          "correct": true,
+          "text": "John Adams"
+        }
+      ]
     },
     {
       "id": 12,
       "category": "Government",
       "question": "How was the Vice President determined before the passing of the 12th Amendment?",
       "hint": "",
-      "wrongOne": "Appointed by Congress",
-      "wrongTwo": "The Presidential candidate who won the popular vote",
-      "wrongThree": "Appointed by the President",
-      "answer": "The Presidential candidate who received the second-largest number of votes in the electoral college"
+      "responses": [
+        {
+          "correct": false,
+          "text": "Appointed by Congress"
+        },
+        {
+          "correct": false,
+          "text": "The Presidential candidate who won the popular vote"
+        },
+        {
+          "correct": false,
+          "text": "Appointed by the President"
+        },
+        {
+          "correct": true,
+          "text": "The Presidential candidate who received the second-largest number of votes in the electoral college"
+        }
+      ]
     },
     {
       "id": 13,
       "category": "People",
       "question": "Who signed the Civil Rights Act that extended the rights of emancipated slaves?",
       "hint": "They're on the first screen of this app!",
-      "wrongOne": "Lyndon B. Johnson",
-      "wrongTwo": "Abraham Lincoln",
-      "wrongThree": "Andrew Johnson",
-      "answer": "Ulysses S. Grant"
+      "responses": [
+        {
+          "correct": false,
+          "text": "Lyndon B. Johnson"
+        },
+        {
+          "correct": false,
+          "text": "Abraham Lincoln"
+        },
+        {
+          "correct": false,
+          "text": "Andrew Johnson"
+        },
+        {
+          "correct": true,
+          "text": "Ulysses S. Grant"
+        }
+      ]
     },
     {
       "id": 14,
       "category": "Government",
       "question": "The 15th Amendment prohibited what?",
       "hint": "",
-      "wrongOne": "The President to serve more than two terms.",
-      "wrongTwo": "Slavery",
-      "wrongThree": "The selling and consumption of alcohol.",
-      "answer": "Denying citizens the right to vote based on race, color, or previous condition of servitude."
+      "responses": [
+        {
+          "correct": false,
+          "text": "The President to serve more than two terms."
+        },
+        {
+          "correct": false,
+          "text": "Slavery"
+        },
+        {
+          "correct": false,
+          "text": "The selling and consumption of alcohol."
+        },
+        {
+          "correct": true,
+          "text": "Denying citizens the right to vote based on race, color, or previous condition of servitude."
+        }
+      ]
     },
     {
       "id": 15,
       "category": "History",
       "question": "The Treaty of Ghent ended which war?",
       "hint": "",
-      "wrongOne": "Mexican-American War",
-      "wrongTwo": "Civil War",
-      "wrongThree": "American Revolutionary War",
-      "answer": "War of 1812"
+      "responses": [
+        {
+          "correct": false,
+          "text": "Mexican-American War"
+        },
+        {
+          "correct": false,
+          "text": "Civil War"
+        },
+        {
+          "correct": false,
+          "text": "American Revolutionary War"
+        },
+        {
+          "correct": true,
+          "text": "War of 1812"
+        }
+      ]
     },
     {
       "id": 16,
       "category": "History",
       "question": "What is the national anthem of the United States?",
       "hint": "",
-      "wrongOne": "God Bless America",
-      "wrongTwo": "America",
-      "wrongThree": "Born in the USA",
-      "answer": "The Star-Spangled Banner"
+      "responses": [
+        {
+          "correct": false,
+          "text": "God Bless America"
+        },
+        {
+          "correct": false,
+          "text": "America"
+        },
+        {
+          "correct": false,
+          "text": "Born in the USA"
+        },
+        {
+          "correct": true,
+          "text": "The Star-Spangled Banner"
+        }
+      ]
     },
     {
       "id": 17,
       "category": "Locations",
       "question": "What is the highest point in the United States?",
       "hint": "Its name was recently changed from Mount McKinley.",
-      "wrongOne": "Mount Rushmore",
-      "wrongTwo": "Mount Whiteface",
-      "wrongThree": "Mount Everest",
-      "answer": "Denali"
+      "responses": [
+        {
+          "correct": false,
+          "text": "Mount Rushmore"
+        },
+        {
+          "correct": false,
+          "text": "Mount Whiteface"
+        },
+        {
+          "correct": false,
+          "text": "Mount Everest"
+        },
+        {
+          "correct": true,
+          "text": "Denali"
+        }
+      ]
     },
     {
       "id": 18,
       "category": "People",
       "question": "Who was the first President born in the United States?",
       "hint": "",
-      "wrongOne": "Andrew Jackson",
-      "wrongTwo": "Thomas Jefferson",
-      "wrongThree": "George Washington",
-      "answer": "Martin van Buren"
+      "responses": [
+        {
+          "correct": false,
+          "text": "Andrew Jackson"
+        },
+        {
+          "correct": false,
+          "text": "Thomas Jefferson"
+        },
+        {
+          "correct": false,
+          "text": "George Washington"
+        },
+        {
+          "correct": true,
+          "text": "Martin van Buren"
+        }
+      ]
     },
     {
       "id": 19,
       "category": "People",
       "question": "Which former President was appointed by his successor to be the Chief Justice of the Supreme Court?",
       "hint": "",
-      "wrongOne": "Theodore Roosevelt",
-      "wrongTwo": "Woodrow Wilson",
-      "wrongThree": "Warren G. Harding",
-      "answer": "William H. Taft"
+      "responses": [
+        {
+          "correct": false,
+          "text": "Theodore Roosevelt"
+        },
+        {
+          "correct": false,
+          "text": "Warren G. Harding"
+        },
+        {
+          "correct": false,
+          "text": "Warren G. Harding"
+        },
+        {
+          "correct": true,
+          "text": "William H. Taft"
+        }
+      ]
     },
     {
       "id": 20,
       "category": "Locations",
       "question": "Which was the last capital city of the Confederate States of America?",
       "hint": "",
-      "wrongOne": "Montgomery, Alabama",
-      "wrongTwo": "Savannah, Georgia",
-      "wrongThree": "Columbia, South Carolina",
-      "answer": "Richmond, Virginia"
+      "responses": [
+        {
+          "correct": false,
+          "text": "Montgomery, Alabama"
+        },
+        {
+          "correct": false,
+          "text": "Savannah, Georgia"
+        },
+        {
+          "correct": false,
+          "text": "Columbia, South Carolina"
+        },
+        {
+          "correct": true,
+          "text": "Richmond, Virginia"
+        }
+      ]
     },
     {
       "id": 21,
       "category": "People",
-      "question": "Who was the President of the Confederate States of America?",
+      "question": "Who was the pretend President of the Confederate States of America?",
       "hint": "",
-      "wrongOne": "Stephen Douglas",
-      "wrongTwo": "Robert E. Lee",
-      "wrongThree": "Alexander Stephens",
-      "answer": "Jefferson Davis"
+      "responses": [
+        {
+          "correct": false,
+          "text": "Stephen Douglas"
+        },
+        {
+          "correct": false,
+          "text": "Robert E. Lee"
+        },
+        {
+          "correct": false,
+          "text": "Alexander Stephens"
+        },
+        {
+          "correct": true,
+          "text": "Jefferson Davis"
+        }
+      ]
     },
     {
       "id": 22,
       "category": "Locations",
       "question": "Which city was once known as New Amsterdam?",
       "hint": "",
-      "wrongOne": "Richmond",
-      "wrongTwo": "Salem",
-      "wrongThree": "Philadelphia",
-      "answer": "New York"
+      "responses": [
+        {
+          "correct": false,
+          "text": "Richmond"
+        },
+        {
+          "correct": false,
+          "text": "Salem"
+        },
+        {
+          "correct": false,
+          "text": "Philadelphia"
+        },
+        {
+          "correct": true,
+          "text": "New York City"
+        }
+      ]
     },
     {
       "id": 23,
       "category": "Government",
       "question": "If both the President and Vice President of the United States were to die, who would be the next President?",
       "hint": "",
-      "wrongOne": "Secretary of State",
-      "wrongTwo": "Chief of Staff of the President",
-      "wrongThree": "Senate Majority Leader",
-      "answer": "Speaker of the House of Representatives"
+      "responses": [
+        {
+          "correct": false,
+          "text": "Secretary of State"
+        },
+        {
+          "correct": false,
+          "text": "Chief of Staff of the President"
+        },
+        {
+          "correct": false,
+          "text": "Senate Majority Leader"
+        },
+        {
+          "correct": true,
+          "text": "Speaker of the House of Representatives"
+        }
+      ]
     },
     {
       "id": 24,
       "category": "Locations",
       "question": "What is the tallest building in the United States?",
       "hint": "",
-      "wrongOne": "World Trade Center",
-      "wrongTwo": "Trump Tower",
-      "wrongThree": "Empire State Building",
-      "answer": "Sears Tower"
+      "responses": [
+        {
+          "correct": false,
+          "text": "World Trade Center"
+        },
+        {
+          "correct": false,
+          "text": "Trump Tower"
+        },
+        {
+          "correct": false,
+          "text": "Empire State Building"
+        },
+        {
+          "correct": true,
+          "text": "Sears Tower"
+        }
+      ]
     },
     {
       "id": 25,
       "category": "People",
       "question": "Who was the woman that helped Lewis and Clark in their expedition?",
       "hint": "",
-      "wrongOne": "Hillary Clinton",
-      "wrongTwo": "Amelia Earhart",
-      "wrongThree": "Pocahontas",
-      "answer": "Sacagawea"
+      "responses": [
+        {
+          "correct": false,
+          "text": "Hillary Clinton"
+        },
+        {
+          "correct": false,
+          "text": "Amelia Earhart"
+        },
+        {
+          "correct": false,
+          "text": "Pocahontas"
+        },
+        {
+          "correct": true,
+          "text": "Sacagawea"
+        }
+      ]
     },
     {
       "id": 26,
-      "category": "Government",
-      "question": "If both the President and Vice President of the United States were to die, who would be the next President?",
-      "hint": "",
-      "wrongOne": "Secretary of State",
-      "wrongTwo": "Chief of Staff of the President",
-      "wrongThree": "Senate Majority Leader",
-      "answer": "Speaker of the House of Representatives"
-    },
-    {
-      "id": 27,
       "category": "History",
       "question": "The Great Depression originated after the Wall Street Crash of 1929 also known as what?",
       "hint": "",
-      "wrongOne": "Not So Super Tuesday",
-      "wrongTwo": "Super Tuesday",
-      "wrongThree": "Black Friday",
-      "answer": "Black Tuesday"
+      "responses": [
+        {
+          "correct": false,
+          "text": "Throwback Thursday"
+        },
+        {
+          "correct": false,
+          "text": "Super Tuesday"
+        },
+        {
+          "correct": false,
+          "text": "Black Friday"
+        },
+        {
+          "correct": true,
+          "text": "Black Tuesday"
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "category": "Government",
+      "question": "Prohibition was instituted by which amendment?",
+      "hint": "",
+      "responses": [
+        {
+          "correct": false,
+          "text": "20th Amendment"
+        },
+        {
+          "correct": false,
+          "text": "19th Amendment"
+        },
+        {
+          "correct": false,
+          "text": "21st Amendment"
+        },
+        {
+          "correct": true,
+          "text": "18th Amendment"
+        }
+      ]
     },
     {
       "id": 28,
       "category": "Government",
-      "question": "Prohibition was instituted by which amendment?",
+      "question": "This amendment was one of the twelve original proposed amendments but failed to get ratified by enough votes, until 1992 when it garnered enough votes to get ratified after more than 202 years and it dealt with what?",
       "hint": "",
-      "wrongOne": "20th Amendment",
-      "wrongTwo": "19th Amendment",
-      "wrongThree": "21st Amendment",
-      "answer": "18th Amendment"
+      "responses": [
+        {
+          "correct": false,
+          "text": "Presidential term limits"
+        },
+        {
+          "correct": false,
+          "text": "Right to bear arms"
+        },
+        {
+          "correct": false,
+          "text": "Freedom of speech"
+        },
+        {
+          "correct": true,
+          "text": "Compensation for members of Congress"
+        }
+      ]
     },
     {
       "id": 29,
       "category": "Government",
-      "question": "This amendment was one of the twelve original proposed amendments but failed to get ratified by enough votes, until 1992 when it garnered enough votes to get ratified after more than 202 years and it dealt with what?",
+      "question": "The 26th Amendment made it so that a citizen's right to vote would not be denied because of age as long as that citizen was how many years old?",
       "hint": "",
-      "wrongOne": "Presidential term limits",
-      "wrongTwo": "Right to bear arms",
-      "wrongThree": "Freedom of speech",
-      "answer": "Compensation for members of Congress"
+      "responses": [
+        {
+          "correct": false,
+          "text": "No age limit"
+        },
+        {
+          "correct": false,
+          "text": "16 years old"
+        },
+        {
+          "correct": false,
+          "text": "21 years old"
+        },
+        {
+          "correct": true,
+          "text": "18 years old"
+        }
+      ]
     },
     {
       "id": 30,
       "category": "Government",
-      "question": "The 26th Amendment made it so that a citizen's right to vote would not be denied because of age as long as that citizen was how many years old?",
+      "question": "Which of these non states has the right to vote in a presidential election as granted by the 23rd Amendment?",
       "hint": "",
-      "wrongOne": "No age limit",
-      "wrongTwo": "16 years old",
-      "wrongThree": "21 years old",
-      "answer": "18 years old"
+      "responses": [
+        {
+          "correct": false,
+          "text": "Virgin Islands"
+        },
+        {
+          "correct": false,
+          "text": "Guam"
+        },
+        {
+          "correct": false,
+          "text": "Puerto Rico"
+        },
+        {
+          "correct": true,
+          "text": "Washington D.C."
+        }
+      ]
     },
     {
       "id": 31,
       "category": "Government",
-      "question": "Which of these non states has the right to vote in a presidential election as granted by the 23rd Amendment?",
+      "question": "What was the landmark United States Supreme Court case which held that the fundamental right to marry was guaranteed to same-sex couples by the 14th Amendment?",
       "hint": "",
-      "wrongOne": "Virgin Islands",
-      "wrongTwo": "Guam",
-      "wrongThree": "Puerto Rico",
-      "answer": "Washington D.C."
+      "responses": [
+        {
+          "correct": false,
+          "text": "Loving v. Virginia"
+        },
+        {
+          "correct": false,
+          "text": "Baker v. Nelson"
+        },
+        {
+          "correct": false,
+          "text": "Bowers v. Hardwick"
+        },
+        {
+          "correct": true,
+          "text": "Obergefell v. Hodges"
+        }
+      ]
     },
     {
       "id": 32,
       "category": "Government",
-      "question": "What was the landmark United States Supreme Court case which held that the fundamental right to marry was guaranteed to same-sex couples by the 14th Amendment?",
+      "question": "What was the landmark United States Supreme Court case which invalidated anti-miscegenation laws?",
       "hint": "",
-      "wrongOne": "Loving v. Virginia",
-      "wrongTwo": "Baker v. Nelson",
-      "wrongThree": "Bowers v. Hardwick",
-      "answer": "Obergefell v. Hodges"
+      "responses": [
+        {
+          "correct": false,
+          "text": "Obergefell v. Hodges"
+        },
+        {
+          "correct": false,
+          "text": "Naim v. Naim"
+        },
+        {
+          "correct": false,
+          "text": "Pace v. Alabama"
+        },
+        {
+          "correct": true,
+          "text": "Loving v. Virginia"
+        }
+      ]
     },
     {
       "id": 33,
       "category": "Government",
-      "question": "What was the landmark United States Supreme Court case which invalidated anti-miscegenation laws?",
+      "question": "What was the landmark United States Supreme Court case which stated that a woman's decision to have an abortion was covered by the right to privacy under the 14th Amendment?",
       "hint": "",
-      "wrongOne": "Obergefell v. Hodges",
-      "wrongTwo": "Naim v. Naim",
-      "wrongThree": "Pace v. Alabama",
-      "answer": "Loving v. Virginia"
+      "responses": [
+        {
+          "correct": false,
+          "text": "Obergefell v. Hodges"
+        },
+        {
+          "correct": false,
+          "text": "Loving v. Virginia"
+        },
+        {
+          "correct": false,
+          "text": "United States v. Vuitch"
+        },
+        {
+          "correct": true,
+          "text": "Roe v. Wade"
+        }
+      ]
     },
     {
       "id": 34,
       "category": "Government",
-      "question": "What was the landmark United States Supreme Court case which stated that a woman's decision to have an abortion was covered by the right to privacy under the 14th Amendment?",
+      "question": "What was the landmark United States Supreme Court case that upheld racial segregation under the doctrine of separate but equal?",
       "hint": "",
-      "wrongOne": "Obergefell v. Hodges",
-      "wrongTwo": "Loving v. Virginia",
-      "wrongThree": "United States v. Vuitch",
-      "answer": "Roe v. Wade"
+      "responses": [
+        {
+          "correct": false,
+          "text": "Dredd Scott v. Sandford"
+        },
+        {
+          "correct": false,
+          "text": "Loving v. Virginia"
+        },
+        {
+          "correct": false,
+          "text": "Brown v. Board of Education"
+        },
+        {
+          "correct": true,
+          "text": "Plessy v. Ferguson"
+        }
+      ]
     },
     {
       "id": 35,
       "category": "Government",
-      "question": "What was the landmark United States Supreme Court case that upheld racial segregation under the doctrine of separate but equal?",
+      "question": "What was the landmark United States Supreme Court case that formed the basis for the exercise of judicial review under Article III of the Constitution, which says Congress can't pass laws that are contrary to the Constitution and that the Judicial system gets to interprets what the Constitution permits?",
       "hint": "",
-      "wrongOne": "Dredd Scott v. Sandford",
-      "wrongTwo": "Loving v. Virginia",
-      "wrongThree": "Brown v. Board of Education",
-      "answer": "Plessy v. Ferguson"
+      "responses": [
+        {
+          "correct": false,
+          "text": "Calder v. Bull"
+        },
+        {
+          "correct": false,
+          "text": "Stuart v. Laird"
+        },
+        {
+          "correct": false,
+          "text": "United States v. More"
+        },
+        {
+          "correct": true,
+          "text": "Marbury v. Madison"
+        }
+      ]
     },
     {
       "id": 36,
-      "category": "Government",
-      "question": "What was the landmark United States Supreme Court case that formed the basis for the exercise of judicial review under Article III of the Constitution, which says Congress can't pass laws that are contrary to the Constitution and that the Judicial system gets to interprets what the Constitution permits?",
+      "category": "People",
+      "question": "Who became the Democratic Presidential nominee in 1968 by winning delegates in non-primary states?",
       "hint": "",
-      "wrongOne": "Calder v. Bull",
-      "wrongTwo": "Stuart v. Laird",
-      "wrongThree": "United States v. More",
-      "answer": "Marbury v. Madison"
+      "responses": [
+        {
+          "correct": false,
+          "text": "Lyndon B. Johnson"
+        },
+        {
+          "correct": false,
+          "text": "Robert F. Kennedy"
+        },
+        {
+          "correct": false,
+          "text": "Eugene Debs"
+        },
+        {
+          "correct": true,
+          "text": "Hubert Humphrey"
+        }
+      ]
     },
     {
       "id": 37,
       "category": "People",
-      "question": "Who became the Democratic Presidential nominee in 1968 by winning delegates in non-primary states?",
+      "question": "Which of the following was not Vice President to President Franklin D. Roosevelt?",
       "hint": "",
-      "wrongOne": "Lyndon B. Johnson",
-      "wrongTwo": "Robert F. Kennedy",
-      "wrongThree": "Eugene McCarthy",
-      "answer": "Hubert Humphrey"
+      "responses": [
+        {
+          "correct": false,
+          "text": "John Nance Garner"
+        },
+        {
+          "correct": false,
+          "text": "Henry A. Wallace"
+        },
+        {
+          "correct": false,
+          "text": "Harry S. Truman"
+        },
+        {
+          "correct": true,
+          "text": "James F. Byrnes"
+        }
+      ]
     },
     {
       "id": 38,
       "category": "People",
-      "question": "Which of the following was not Vice President to President Franklin D. Roosevelt?",
-      "hint": "",
-      "wrongOne": "John Nance Garner",
-      "wrongTwo": "Henry A. Wallace",
-      "wrongThree": "Harry S. Truman",
-      "answer": "James F. Byrnes"
-    },
-    {
-      "id": 39,
-      "category": "People",
       "question": "Who authorized the establishment of NASA after the Soviet Union launched the world's first satellite?",
       "hint": "",
-      "wrongOne": "Harry S. Truman",
-      "wrongTwo": "Richard M. Nixon",
-      "wrongThree": "John F. Kennedy",
-      "answer": "Dwight D. Eisenhower"
+      "responses": [
+        {
+          "correct": false,
+          "text": "Harry S. Truman"
+        },
+        {
+          "correct": false,
+          "text": "Richard M. Nixon"
+        },
+        {
+          "correct": false,
+          "text": "John F. Kennedy"
+        },
+        {
+          "correct": true,
+          "text": "Dwight D. Eisenhower"
+        }
+      ]
     }
   ],
   "medium": [
@@ -406,291 +942,697 @@
       "id": 0,
       "category": "History",
       "question": "The annexation in 1845 of which state caused a chain of events that resulted in the Mexican-American war.",
-      "hint": "The Lone Star.",
-      "wrongOne": "Arizona",
-      "wrongTwo": "California",
-      "wrongThree": "New Mexico",
-      "answer": "Texas"
+      "hint": "The Lone Star State.",
+      "responses": [
+        {
+          "correct": false,
+          "text": "Arizona"
+        },
+        {
+          "correct": false,
+          "text": "California"
+        },
+        {
+          "correct": false,
+          "text": "New Mexico"
+        },
+        {
+          "correct": true,
+          "text": "Texas"
+        }
+      ]
     },
     {
       "id": 1,
       "category": "People",
       "question": "Who was the first African-American President of the United States?",
       "hint": "His campaign slogans were 'Hope' and 'Change'.",
-      "wrongOne": "George Washington Carver",
-      "wrongTwo": "Martin Luther King Jr.",
-      "wrongThree": "Frederick Douglas",
-      "answer": "Barack Obama"
+      "responses": [
+        {
+          "correct": false,
+          "text": "George Washington Carver"
+        },
+        {
+          "correct": false,
+          "text": "Martin Luther King Jr."
+        },
+        {
+          "correct": false,
+          "text": "Frederick Douglas"
+        },
+        {
+          "correct": true,
+          "text": "Barack Obama"
+        }
+      ]
     },
     {
       "id": 2,
       "category": "Locations",
       "question": "What is the largest state in the Union?",
       "hint": "The state originally belonged to Russia.",
-      "wrongOne": "Rhode Island",
-      "wrongTwo": "California",
-      "wrongThree": "Texas",
-      "answer": "Alaska"
+      "responses": [
+        {
+          "correct": false,
+          "text": "Rhode Island"
+        },
+        {
+          "correct": false,
+          "text": "California"
+        },
+        {
+          "correct": false,
+          "text": "Texas"
+        },
+        {
+          "correct": true,
+          "text": "Alaska"
+        }
+      ]
     },
     {
       "id": 3,
       "category": "International Relations",
       "question": "Which of the following is not a member of the United Nations Security Council?",
       "hint": "All of the nations in the Security Council were Allies during the Second World War.",
-      "wrongOne": "Russia",
-      "wrongTwo": "China",
-      "wrongThree": "France",
-      "answer": "Germany"
+      "responses": [
+        {
+          "correct": false,
+          "text": "Russia"
+        },
+        {
+          "correct": false,
+          "text": "China"
+        },
+        {
+          "correct": false,
+          "text": "France"
+        },
+        {
+          "correct": true,
+          "text": "Germany"
+        }
+      ]
     },
     {
       "id": 4,
       "category": "History",
       "question": "After which war did the United States gain possession of Guam, the Philippines, and Puerto Rico?",
       "hint": "Which empire did these colonies belong to?",
-      "wrongOne": "Mexican-American War",
-      "wrongTwo": "War of 1812",
-      "wrongThree": "Civil War",
-      "answer": "Spanish-American War"
+      "responses": [
+        {
+          "correct": false,
+          "text": "Mexican-American War"
+        },
+        {
+          "correct": false,
+          "text": "War of 1812"
+        },
+        {
+          "correct": false,
+          "text": "Civil War"
+        },
+        {
+          "correct": true,
+          "text": "Spanish-American War"
+        }
+      ]
     },
     {
       "id": 5,
       "category": "Locations",
       "question": "Which was Abraham Lincoln's home state?",
       "hint": "",
-      "wrongOne": "Pennsylvania",
-      "wrongTwo": "Arkansas",
-      "wrongThree": "Kentucky",
-      "answer": "Illinois"
+      "responses": [
+        {
+          "correct": false,
+          "text": "Pennsylvania"
+        },
+        {
+          "correct": false,
+          "text": "Arkansas"
+        },
+        {
+          "correct": false,
+          "text": "Kentucky"
+        },
+        {
+          "correct": true,
+          "text": "Illinois"
+        }
+      ]
     },
     {
       "id": 6,
       "category": "People",
       "question": "Which congressman played a pivotal role in enacting the Missouri Compromise.",
       "hint": "",
-      "wrongOne": "John C. Calhoun",
-      "wrongTwo": "Paul Ryan",
-      "wrongThree": "John Bohner",
-      "answer": "Henry Clay"
+      "responses": [
+        {
+          "correct": false,
+          "text": "John C. Calhoun"
+        },
+        {
+          "correct": false,
+          "text": "Paul Ryan"
+        },
+        {
+          "correct": false,
+          "text": "John Bohner"
+        },
+        {
+          "correct": true,
+          "text": "Henry Clay"
+        }
+      ]
     },
     {
       "id": 7,
       "category": "History",
       "question": "Which President signed the Indian Removal Act which resulted in the Trail of Tears?",
       "hint": "He won a decisive victory in the Battle of New Orleans during the War of 1812.",
-      "wrongOne": "John Quincy Adams",
-      "wrongTwo": "James Madison",
-      "wrongThree": "James Monroe",
-      "answer": "Andrew Jackson"
+      "responses": [
+        {
+          "correct": false,
+          "text": "John Quincy Adams"
+        },
+        {
+          "correct": false,
+          "text": "James Madison"
+        },
+        {
+          "correct": false,
+          "text": "James Monroe"
+        },
+        {
+          "correct": true,
+          "text": "Andrew Jackson"
+        }
+      ]
     },
     {
       "id": 8,
       "category": "Government",
       "question": "Which constitutional amendment effectively ended slavery in the United States?",
       "hint": "",
-      "wrongOne": "First Amendment",
-      "wrongTwo": "Tenth Amendment",
-      "wrongThree": "Fourteenth Amendment",
-      "answer": "Thirteenth Amendment"
+      "responses": [
+        {
+          "correct": false,
+          "text": "First Amendment"
+        },
+        {
+          "correct": false,
+          "text": "Tenth Amendment"
+        },
+        {
+          "correct": false,
+          "text": "Fourteenth Amendment"
+        },
+        {
+          "correct": true,
+          "text": "Thirteenth Amendment"
+        }
+      ]
     },
     {
       "id": 9,
       "category": "People",
       "question": "Who was the President of the United States during the Iran Hostage Crisis?",
       "hint": "",
-      "wrongOne": "Richard Nixon",
-      "wrongTwo": "George Bush",
-      "wrongThree": "Ronald Reagan",
-      "answer": "Jimmy Carter"
+      "responses": [
+        {
+          "correct": false,
+          "text": "Richard Nixon"
+        },
+        {
+          "correct": false,
+          "text": "George Bush"
+        },
+        {
+          "correct": false,
+          "text": "Ronald Reagan"
+        },
+        {
+          "correct": true,
+          "text": "Jimmy Carter"
+        }
+      ]
     },
     {
       "id": 10,
       "category": "People",
       "question": "Who was chosen as President as a result of the Compromise of 1877 which also required the removal of the U.S. military from former Confederate States?",
       "hint": "",
-      "wrongOne": "William McKinley",
-      "wrongTwo": "Samuel J. Tilden",
-      "wrongThree": "Ulysses Grant",
-      "answer": "Rutherford B. Hayes"
+      "responses": [
+        {
+          "correct": false,
+          "text": "William McKinley"
+        },
+        {
+          "correct": false,
+          "text": "Samuel J. Tilden"
+        },
+        {
+          "correct": false,
+          "text": "Ulysses Grant"
+        },
+        {
+          "correct": true,
+          "text": "Rutherford B. Hayes"
+        }
+      ]
     },
     {
       "id": 11,
       "category": "People",
       "question": "Whose face is not featured in Mount Rushmore National Memorial",
       "hint": "",
-      "wrongOne": "George Washington",
-      "wrongTwo": "Theodore Roosevelt",
-      "wrongThree": "Abraham Lincoln",
-      "answer": "Franklin Roosevelt"
+      "responses": [
+        {
+          "correct": false,
+          "text": "George Washington"
+        },
+        {
+          "correct": false,
+          "text": "Theodore Roosevelt"
+        },
+        {
+          "correct": false,
+          "text": "Abraham Lincoln"
+        },
+        {
+          "correct": true,
+          "text": "Franklin Delano Roosevelt"
+        }
+      ]
     },
     {
       "id": 12,
       "category": "International Relations",
       "question": "In order to build the Panama Canal, the United States helped Panama gain independence from which country?",
       "hint": "",
-      "wrongOne": "Chile",
-      "wrongTwo": "Venezuela",
-      "wrongThree": "Nicaragua",
-      "answer": "Colombia"
+      "responses": [
+        {
+          "correct": false,
+          "text": "Chile"
+        },
+        {
+          "correct": false,
+          "text": "Venezuela"
+        },
+        {
+          "correct": false,
+          "text": "Nicaragua"
+        },
+        {
+          "correct": true,
+          "text": "Colombia"
+        }
+      ]
     },
     {
       "id": 13,
       "category": "International Relations",
       "question": "What is the name of a large military campaign launched on Vietnamese New Year against the South Vietnamese and United States?",
       "hint": "",
-      "wrongOne": "Rouge Retribution",
-      "wrongTwo": "Vietnamese Counterattack",
-      "wrongThree": "Laos Offensive",
-      "answer": "Tet Offensive"
+      "responses": [
+        {
+          "correct": false,
+          "text": "Rouge Retribution"
+        },
+        {
+          "correct": false,
+          "text": "Vietnamese Counterattack"
+        },
+        {
+          "correct": false,
+          "text": "Laos Offensive"
+        },
+        {
+          "correct": true,
+          "text": "Tet Offensive"
+        }
+      ]
     },
     {
       "id": 14,
       "category": "International Relations",
       "question": "What is a common name for the plan that gave aid to European countries following World War II?",
       "hint": "",
-      "wrongOne": "European Plan",
-      "wrongTwo": "Sears Plan",
-      "wrongThree": "Macys Plan",
-      "answer": "Marshall Plan"
+      "responses": [
+        {
+          "correct": false,
+          "text": "European Plan"
+        },
+        {
+          "correct": false,
+          "text": "Sears Plan"
+        },
+        {
+          "correct": false,
+          "text": "Macy's Plan"
+        },
+        {
+          "correct": true,
+          "text": "Marshall Plan"
+        }
+      ]
     },
     {
       "id": 15,
       "category": "People",
       "question": "Which were the main parties during the Second Party System period from 1830s to the mid-1850s?",
       "hint": "",
-      "wrongOne": "Federalist Party and Anti-Federalist Party",
-      "wrongTwo": "Democratic Party and Grand Old Party",
-      "wrongThree": "Democratic Party and Republican Party",
-      "answer": "Democratic Party and Whig Party"
+      "responses": [
+        {
+          "correct": false,
+          "text": "Federalist Party and Anti-Federalist Party"
+        },
+        {
+          "correct": false,
+          "text": "Democratic Party and Grand Old Party"
+        },
+        {
+          "correct": false,
+          "text": "Democratic Party and Republican Party"
+        },
+        {
+          "correct": true,
+          "text": "Democratic Party and Whig Party"
+        }
+      ]
     },
     {
       "id": 16,
       "category": "People",
       "question": "Who was the first Democratic President?",
       "hint": "",
-      "wrongOne": "Hillary Clinton",
-      "wrongTwo": "Thomas Jefferson",
-      "wrongThree": "Martin van Buren",
-      "answer": "Andrew Jackson"
+      "responses": [
+        {
+          "correct": false,
+          "text": "William Jefferson Clinton"
+        },
+        {
+          "correct": false,
+          "text": "Thomas Jefferson"
+        },
+        {
+          "correct": false,
+          "text": "Martin van Buren"
+        },
+        {
+          "correct": true,
+          "text": "Andrew Jackson"
+        }
+      ]
     },
     {
       "id": 17,
       "category": "People",
       "question": "Who was the first Republican President?",
       "hint": "",
-      "wrongOne": "Donald J. Trump",
-      "wrongTwo": "Henry Clay",
-      "wrongThree": "Horace Greely",
-      "answer": "Abraham Lincoln"
+      "responses": [
+        {
+          "correct": false,
+          "text": "Donald J. Trump"
+        },
+        {
+          "correct": false,
+          "text": "Henry Clay"
+        },
+        {
+          "correct": false,
+          "text": "Horace Greely"
+        },
+        {
+          "correct": true,
+          "text": "Abraham Lincoln"
+        }
+      ]
     },
     {
       "id": 18,
       "category": "Government",
-      "question": "Which was the first American political party?",
+      "question": "Which of the following was the first American political party?",
       "hint": "",
-      "wrongOne": "Whig Party",
-      "wrongTwo": "Republican Party",
-      "wrongThree": "Democratic Party",
-      "answer": "Federalist Party"
+      "responses": [
+        {
+          "correct": false,
+          "text": "Whig Party"
+        },
+        {
+          "correct": false,
+          "text": "Republican Party"
+        },
+        {
+          "correct": false,
+          "text": "Democratic Party"
+        },
+        {
+          "correct": true,
+          "text": "Federalist Party"
+        }
+      ]
     },
     {
       "id": 19,
       "category": "People",
       "question": "What Justice's opinion lay as basis for United States constitutional law, which made the judicial branch coequal to the executive and legislative branches?",
       "hint": "",
-      "wrongOne": "John Jay",
-      "wrongTwo": "Rudith Bayer Ginsburg",
-      "wrongThree": "Antonin Scalia",
-      "answer": "John Marshall"
+      "responses": [
+        {
+          "correct": false,
+          "text": "John Jay"
+        },
+        {
+          "correct": false,
+          "text": "Rudith Bayer Ginsburg"
+        },
+        {
+          "correct": false,
+          "text": "Antonin Scalia"
+        },
+        {
+          "correct": true,
+          "text": "John Marshall"
+        }
+      ]
     },
     {
       "id": 20,
       "category": "History",
       "question": "What term was used to characterize reform-minded American journalists?",
       "hint": "",
-      "wrongOne": "Steffbrakers",
-      "wrongTwo": "Lollygaggers",
-      "wrongThree": "Gobbeloppers",
-      "answer": "Muckrakers"
+      "responses": [
+        {
+          "correct": false,
+          "text": "Steffbrakers"
+        },
+        {
+          "correct": false,
+          "text": "Lollygaggers"
+        },
+        {
+          "correct": false,
+          "text": "Gobbeloppers"
+        },
+        {
+          "correct": true,
+          "text": "Muckrakers"
+        }
+      ]
     },
     {
       "id": 21,
       "category": "History",
       "question": "The sinking of which shipped helped shift the American public opinion against Germany?",
       "hint": "",
-      "wrongOne": "Mauretania",
-      "wrongTwo": "Maine",
-      "wrongThree": "Titanic",
-      "answer": "Lusitania"
+      "responses": [
+        {
+          "correct": false,
+          "text": "Mauretania"
+        },
+        {
+          "correct": false,
+          "text": "Maine"
+        },
+        {
+          "correct": false,
+          "text": "Titanic"
+        },
+        {
+          "correct": true,
+          "text": "Lusitania"
+        }
+      ]
     },
     {
       "id": 22,
       "category": "People",
       "question": "Who is not one of the most famous writers who was from the Lost Generation?",
       "hint": "",
-      "wrongOne": "Ernest Hemingway",
-      "wrongTwo": "James Joyce",
-      "wrongThree": "F. Scott Fitzgerald",
-      "answer": "Gore Vidal"
+      "responses": [
+        {
+          "correct": false,
+          "text": "Ernest Hemingway"
+        },
+        {
+          "correct": false,
+          "text": "James Joyce"
+        },
+        {
+          "correct": false,
+          "text": "F. Scott Fitzgerald"
+        },
+        {
+          "correct": true,
+          "text": "Gore Vidal"
+        }
+      ]
     },
     {
       "id": 23,
       "category": "History",
       "question": "Which term stands for the easing of strained relations?",
       "hint": "",
-      "wrongOne": "Perestroika",
-      "wrongTwo": "Glasnost",
-      "wrongThree": "Rapprochement",
-      "answer": "Détente"
+      "responses": [
+        {
+          "correct": false,
+          "text": "Perestroika"
+        },
+        {
+          "correct": false,
+          "text": "Glasnost"
+        },
+        {
+          "correct": false,
+          "text": "Rapprochement"
+        },
+        {
+          "correct": true,
+          "text": "Détente"
+        }
+      ]
     },
     {
       "id": 24,
       "category": "Government",
       "question": "Which term stands for the executive committee for a number of political parties?",
       "hint": "",
-      "wrongOne": "Realpolitik",
-      "wrongTwo": "Politas",
-      "wrongThree": "Politico",
-      "answer": "Politburo"
+      "responses": [
+        {
+          "correct": false,
+          "text": "Realpolitik"
+        },
+        {
+          "correct": false,
+          "text": "Politas"
+        },
+        {
+          "correct": false,
+          "text": "Politico"
+        },
+        {
+          "correct": true,
+          "text": "Politburo"
+        }
+      ]
     },
     {
       "id": 25,
       "category": "People",
       "question": "What President is famous for a story of him cutting a cherry tree?",
       "hint": "",
-      "wrongOne": "George Bush",
-      "wrongTwo": "Abraham Lincoln",
-      "wrongThree": "Thomas Jefferson",
-      "answer": "George Washington"
+      "responses": [
+        {
+          "correct": false,
+          "text": "George Bush"
+        },
+        {
+          "correct": false,
+          "text": "Abraham Lincoln"
+        },
+        {
+          "correct": false,
+          "text": "Thomas Jefferson"
+        },
+        {
+          "correct": true,
+          "text": "George Washington"
+        }
+      ]
     },
     {
       "id": 26,
       "category": "People",
       "question": "Who authored the Declaration of Independence?",
       "hint": "",
-      "wrongOne": "John Adams",
-      "wrongTwo": "George Washington",
-      "wrongThree": "James Madison",
-      "answer": "Thomas Jefferson"
+      "responses": [
+        {
+          "correct": false,
+          "text": "John Adams"
+        },
+        {
+          "correct": false,
+          "text": "George Washington"
+        },
+        {
+          "correct": false,
+          "text": "James Madison"
+        },
+        {
+          "correct": true,
+          "text": "Thomas Jefferson"
+        }
+      ]
     },
     {
       "id": 27,
       "category": "People",
       "question": "Who was the first Catholic to become President?",
       "hint": "",
-      "wrongOne": "Richard Nixon",
-      "wrongTwo": "Jimmy Carter",
-      "wrongThree": "Bill Clinton",
-      "answer": "John F. Kennedy"
+      "responses": [
+        {
+          "correct": false,
+          "text": "Richard Nixon"
+        },
+        {
+          "correct": false,
+          "text": "Jimmy Carter"
+        },
+        {
+          "correct": false,
+          "text": "Bill Clinton"
+        },
+        {
+          "correct": true,
+          "text": "John F. Kennedy"
+        }
+      ]
     },
     {
       "id": 28,
       "category": "People",
       "question": "Who was the famous traitor during the American Revolutionary War?",
       "hint": "",
-      "wrongOne": "Alexander Hamilton",
-      "wrongTwo": "George Washington",
-      "wrongThree": "Paul Revere",
-      "answer": "Benedict Arnold"
+      "responses": [
+        {
+          "correct": false,
+          "text": "Alexander Hamilton"
+        },
+        {
+          "correct": false,
+          "text": "George Washington"
+        },
+        {
+          "correct": false,
+          "text": "Paul Revere"
+        },
+        {
+          "correct": true,
+          "text": "Benedict Arnold"
+        }
+      ]
     }
   ],
   "hard": [
@@ -699,160 +1641,384 @@
       "category": "Government",
       "question": "What is a common name for a legislation passed in the 1930s which separated commercial and investment banking?",
       "hint": "",
-      "wrongOne": "Volcker Act",
-      "wrongTwo": "Gramm-Leach-Bliley Act",
-      "wrongThree": "Dodd-Frank Act",
-      "answer": "Glass-Steagall Act"
+      "responses": [
+        {
+          "correct": false,
+          "text": "Volcker Act"
+        },
+        {
+          "correct": false,
+          "text": "Gramm-Leach-Bliley Act"
+        },
+        {
+          "correct": false,
+          "text": "Dodd-Frank Act"
+        },
+        {
+          "correct": true,
+          "text": "Glass-Steagall Act"
+        }
+      ]
     },
     {
       "id": 1,
       "category": "People",
       "question": "Who was the first Secretary of the Treasury?",
       "hint": "He is featured in the $10 bill.",
-      "wrongOne": "John Quincy Adams",
-      "wrongTwo": "Thomas Jefferson",
-      "wrongThree": "Aaron Burr",
-      "answer": "Alexander Hamilton"
+      "responses": [
+        {
+          "correct": false,
+          "text": "John Quincy Adams"
+        },
+        {
+          "correct": false,
+          "text": "Thomas Jefferson"
+        },
+        {
+          "correct": false,
+          "text": "Aaron Burr"
+        },
+        {
+          "correct": true,
+          "text": "Alexander Hamilton"
+        }
+      ]
     },
     {
       "id": 2,
       "category": "People",
       "question": "Who was the third Vice President of the United States, and also fought Alexander Hamilton in a deadly duel?",
       "hint": "",
-      "wrongOne": "Benjamin Franklin",
-      "wrongTwo": "George Clinton",
-      "wrongThree": "Thomas Jefferson",
-      "answer": "Aaron Burr"
+      "responses": [
+        {
+          "correct": false,
+          "text": "Benjamin Franklin"
+        },
+        {
+          "correct": false,
+          "text": "George Clinton"
+        },
+        {
+          "correct": false,
+          "text": "Thomas Jefferson"
+        },
+        {
+          "correct": true,
+          "text": "Aaron Burr"
+        }
+      ]
     },
     {
       "id": 3,
       "category": "Government",
       "question": "What is the practice in which political parties in power give government jobs to their supporters?",
       "hint": "",
-      "wrongOne": "Earned system",
-      "wrongTwo": "Meritocracy",
-      "wrongThree": "Favorites system",
-      "answer": "Spoils system"
+      "responses": [
+        {
+          "correct": false,
+          "text": "Earned system"
+        },
+        {
+          "correct": false,
+          "text": "Meritocracy"
+        },
+        {
+          "correct": false,
+          "text": "Favorites system"
+        },
+        {
+          "correct": true,
+          "text": "Spoils system"
+        }
+      ]
     },
     {
       "id": 4,
       "category": "History",
       "question": "What is the name of the accord which effectively ended the American Revolutionary War in 1783?",
       "hint": "",
-      "wrongOne": "Treaty of Seville",
-      "wrongTwo": "Treaty of Versaille",
-      "wrongThree": "Treaty of Ghent",
-      "answer": "Treaty of Paris"
+      "responses": [
+        {
+          "correct": false,
+          "text": "Treaty of Seville"
+        },
+        {
+          "correct": false,
+          "text": "Treaty of Versaille"
+        },
+        {
+          "correct": false,
+          "text": "Treaty of Ghent"
+        },
+        {
+          "correct": true,
+          "text": "Treaty of Paris"
+        }
+      ]
     },
     {
       "id": 5,
       "category": "People",
       "question": "Who was the first Postmaster General of the United States of America?",
       "hint": "He is featured on the $100 dollar bill.",
-      "wrongOne": "John Adams",
-      "wrongTwo": "Alexander Hamilton",
-      "wrongThree": "Aaron Burr",
-      "answer": "Benjamin Franklin"
+      "responses": [
+        {
+          "correct": false,
+          "text": "John Adams"
+        },
+        {
+          "correct": false,
+          "text": "Alexander Hamilton"
+        },
+        {
+          "correct": false,
+          "text": "Aaron Burr"
+        },
+        {
+          "correct": true,
+          "text": "Benjamin Franklin"
+        }
+      ]
     },
     {
       "id": 6,
       "category": "People",
       "question": "Which President signed the Alien and Sedition Acts during a period of tension with the French.",
       "hint": "He served as the first Vice President and later as the second President.",
-      "wrongOne": "George Washington",
-      "wrongTwo": "Andrew Jackson",
-      "wrongThree": "Thomas Jefferson",
-      "answer": "John Adams"
+      "responses": [
+        {
+          "correct": false,
+          "text": "George Washington"
+        },
+        {
+          "correct": false,
+          "text": "Andrew Jackson"
+        },
+        {
+          "correct": false,
+          "text": "Thomas Jefferson"
+        },
+        {
+          "correct": true,
+          "text": "John Adams"
+        }
+      ]
     },
     {
       "id": 7,
       "category": "History",
       "question": "What is the name of the undeclared war, fought mostly at sea, between the United States and the French Republic over a debt controversy.",
       "hint": "",
-      "wrongOne": "Barbary War",
-      "wrongTwo": "Republican War",
-      "wrongThree": "French-American War",
-      "answer": "Quasi-War"
+      "responses": [
+        {
+          "correct": false,
+          "text": "Barbary War"
+        },
+        {
+          "correct": false,
+          "text": "Republican War"
+        },
+        {
+          "correct": false,
+          "text": "French-American War"
+        },
+        {
+          "correct": true,
+          "text": "Quasi-War"
+        }
+      ]
     },
     {
       "id": 8,
       "category": "History",
       "question": "Which were the four states that compromised the Barbary States which fought against the United States in the Barbary Wars?",
-      "hint": "They're on the first screen of this app!",
-      "wrongOne": "Afghanistan, Libya,Morocco, and Syria",
-      "wrongTwo": "Morocco, Libya, Sicily, and Tunis",
-      "wrongThree": "Algiers, Libya, Morocco, and Egypt",
-      "answer": "Algiers, Morocco, Tripoli, and Tunis"
+      "hint": "",
+      "responses": [
+        {
+          "correct": false,
+          "text": "Afghanistan, Libya, Morocco, and Syria"
+        },
+        {
+          "correct": false,
+          "text": "Morocco, Libya, Sicily, and Tunis"
+        },
+        {
+          "correct": false,
+          "text": "Algiers, Libya, Morocco, and Egypt"
+        },
+        {
+          "correct": true,
+          "text": "Algiers, Morocco, Tripoli, and Tunis"
+        }
+      ]
     },
     {
       "id": 9,
       "category": "History",
       "question": "In which year was the Coinage Act signed into law, which discontinued the standard silver dollar and established the gold dollar as the sole monetary standard?",
       "hint": "",
-      "wrongOne": "1769",
-      "wrongTwo": "1974",
-      "wrongThree": "1869",
-      "answer": "1873"
+      "responses": [
+        {
+          "correct": false,
+          "text": "1769"
+        },
+        {
+          "correct": false,
+          "text": "1974"
+        },
+        {
+          "correct": false,
+          "text": "1869"
+        },
+        {
+          "correct": true,
+          "text": "1873"
+        }
+      ]
     },
     {
       "id": 10,
       "category": "History",
       "question": "What is the name of the diplomatic dispute that happened during the Ten Year's War between Spain and Cuba and almost lead to a war between Spain and  the United States?",
       "hint": "",
-      "wrongOne": "Cuban Missile Crisis",
-      "wrongTwo": "Spanish Affair",
-      "wrongThree": "Maine Affair",
-      "answer": "Virginius Affair"
+      "responses": [
+        {
+          "correct": false,
+          "text": "Cuban Missile Crisis"
+        },
+        {
+          "correct": false,
+          "text": "Spanish Affair"
+        },
+        {
+          "correct": false,
+          "text": "Maine Affair"
+        },
+        {
+          "correct": true,
+          "text": "Virginius Affair"
+        }
+      ]
     },
     {
       "id": 11,
       "category": "History",
       "question": "What congressional committee was involved with uncovering citizens with Nazi ties and later Communist Party infiltrations?",
       "hint": "",
-      "wrongOne": "House American Activities Committee",
-      "wrongTwo": "House Socialist Activities Committee",
-      "wrongThree": "House Nazi Activities Committee",
-      "answer": "House Un-American Activities Committee"
+      "responses": [
+        {
+          "correct": false,
+          "text": "House American Activities Committee"
+        },
+        {
+          "correct": false,
+          "text": "House Socialist Activities Committee"
+        },
+        {
+          "correct": false,
+          "text": "House Nazi Activities Committee"
+        },
+        {
+          "correct": true,
+          "text": "House Un-American Activities Committee"
+        }
+      ]
     },
     {
       "id": 12,
       "category": "History",
       "question": "Covert operations which targeted domestic political organizations like the Black Panthers occurred under which program?",
       "hint": "",
-      "wrongOne": "Prism",
-      "wrongTwo": "Contra Program",
-      "wrongThree": "Hoover Program",
-      "answer": "COINTELPRO"
+      "responses": [
+        {
+          "correct": false,
+          "text": "Prism"
+        },
+        {
+          "correct": false,
+          "text": "Contra Program"
+        },
+        {
+          "correct": false,
+          "text": "Hoover Program"
+        },
+        {
+          "correct": true,
+          "text": "COINTELPRO"
+        }
+      ]
     },
     {
       "id": 13,
       "category": "People",
       "question": "Which vice presidential contender gave the famous Checkers speech after being accused of improprieties relating to a political fund?",
-      "hint": "",
-      "wrongOne": "Joe Biden",
-      "wrongTwo": "Al Gore",
-      "wrongThree": "George H. W. Bush",
-      "answer": "Richard Nixon"
+      "hint": "He was a crook.",
+      "responses": [
+        {
+          "correct": false,
+          "text": "Joe Biden"
+        },
+        {
+          "correct": false,
+          "text": "Al Gore"
+        },
+        {
+          "correct": false,
+          "text": "George H. W. Bush"
+        },
+        {
+          "correct": true,
+          "text": "Richard Nixon"
+        }
+      ]
     },
     {
       "id": 14,
       "category": "People",
       "question": "Who was the President of the United States during the Mexican-American War?",
       "hint": "",
-      "wrongOne": "James Monroe",
-      "wrongTwo": "Andrew Jackson",
-      "wrongThree": "Zachary Taylor",
-      "answer": "James K. Polk"
+      "responses": [
+        {
+          "correct": false,
+          "text": "James Monroe"
+        },
+        {
+          "correct": false,
+          "text": "Andrew Jackson"
+        },
+        {
+          "correct": false,
+          "text": "Zachary Taylor"
+        },
+        {
+          "correct": true,
+          "text": "James K. Polk"
+        }
+      ]
     },
     {
       "id": 15,
       "category": "People",
       "question": "Which of following figures of the Civil Rights Movement was born in Alabama?",
       "hint": "",
-      "wrongOne": "Martin Luther King Jr.",
-      "wrongTwo": "Malcolm X",
-      "wrongThree": "James Farmer",
-      "answer": "Rosa Parks"
+      "responses": [
+        {
+          "correct": false,
+          "text": "Martin Luther King Jr."
+        },
+        {
+          "correct": false,
+          "text": "Malcolm X"
+        },
+        {
+          "correct": false,
+          "text": "James Farmer"
+        },
+        {
+          "correct": true,
+          "text": "Rosa Parks"
+        }
+      ]
     }
   ]
 }

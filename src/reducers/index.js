@@ -6,6 +6,7 @@ import navigationReducer from './navigation';
 import candidateReducer from './candidate';
 import electionReducer from './election';
 import tabBarReducer from './tabBar';
+import triviaReducer from './trivia';
 
 const appReducer = combineReducers({
   profileNav: profileNavigationReducer,
@@ -13,6 +14,7 @@ const appReducer = combineReducers({
   election: electoralMapReducer,
   candidate: candidateReducer,
   nav: navigationReducer,
+  trivia: triviaReducer,
   tabBar: tabBarReducer,
 });
 

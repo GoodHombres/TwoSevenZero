@@ -3,7 +3,7 @@ import { Alert, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { connect } from 'react-redux';
 import TriviaLevelCard from './../../components/TriviaLevelCard/TriviaLevelCard';
 import Scoreboard from './../../components/Scoreboard/Scoreboard';
-import { pop, push } from './../../actions/navigation';
+import { pop, push } from './../../actions/mainNavigation';
 import colors from './../../utils/colors';
 
 class TriviaState extends Component {
@@ -12,7 +12,8 @@ class TriviaState extends Component {
   });
 
   _onPressItem(item) {
-    console.log(item);
+    const { goTo, navigation } = this.props;
+    const { state } = navigation.state.params;
 
     if (item.completed) {
       let message = '';
@@ -25,9 +26,11 @@ class TriviaState extends Component {
 
       // Show alert
       Alert.alert('District completed', message);
+    } else {
+      console.log('GOTO LEVEL');
+      // Not complete, go to trivia level
+      goTo('TriviaLevel', { district: item, state: state });
     }
-
-    // Not won push trivia page
   }
 
   _renderItems(item) {
@@ -86,7 +89,7 @@ const mapStateToProps = state => {
 const mapDispatchToProps = dispatch => {
   return {
     goBack: () => dispatch(pop()),
-    goTo: (page) => dispatch(push(page)),
+    goTo: (page, params = {}) => dispatch(push(page, params)),
   };
 };
 
