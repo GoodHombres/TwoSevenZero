@@ -1,41 +1,47 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { FlatList, StyleSheet, Text, TextInput, View } from 'react-native';
-
+import { Alert, FlatList, StyleSheet, Text, TextInput, View } from 'react-native';
 import { push } from './../../actions/mainNavigation';
 import StateList from './../../components/StateList/StateList';
 import colors from './../../utils/colors';
-import stateList from './../../fixtures/main.json';
 
 class Home extends Component {
+  static navigationOptions = ({ navigation }) => ({
+    title: '270',
+  });
+
   constructor(props) {
     super(props);
   }
 
-  onStatePress(id) {
+  onStatePress(state) {
     const { goTo } = this.props;
-
-    goTo('State', { id });
+    switch (state.level.type) {
+      case 'trivia':
+        goTo('TriviaState', { state });
+        break;
+      default:
+          Alert.alert('Unknown level type.');
+        break;
+    }
   }
 
   _renderStates({item}) {
     return (
       <StateList
         item={item}
-        id={item.key}
-        title={item.name}
         onPressState={this.onStatePress.bind(this)}
       />
     );
   }
 
   render() {
-    const { name, party } = this.props;
+    const { name, party, electoralMap } = this.props;
+    console.log(electoralMap);
     return (
       <View style={styles.container}>
         <FlatList
-          data={stateList.states}
-          keyExtractor={item => item.id}
+          data={electoralMap.states}
           renderItem={this._renderStates.bind(this)}
         />
       </View>
@@ -45,6 +51,7 @@ class Home extends Component {
 
 const styles = StyleSheet.create({
   container: {
+    backgroundColor: colors.background,
     flex: 1,
   },
   item: {
@@ -54,8 +61,9 @@ const styles = StyleSheet.create({
 
 const mapStateToProps = state => {
   return {
-    name: state.player.name,
-    party: state.player.party,
+    name: state.candidate.name,
+    party: state.candidate.party,
+    electoralMap: state.election,
   };
 }
 

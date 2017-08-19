@@ -1,0 +1,446 @@
+{
+  "states": [
+    {
+      "key": 0,
+      "id": "co",
+      "name": "Colorado",
+      "electoralVotes": 9,
+      "playerScore": 0,
+      "opponentScore": 0,
+      "level": {
+        "type": "trivia",
+        "districts": [
+          {
+            "key": 0,
+            "won": false,
+            "completed": false,
+            "size": 1,
+            "points": 42,
+            "difficulty": "hard"
+          },
+          {
+            "key": 1,
+            "won": false,
+            "completed": false,
+            "size": 2,
+            "points": 32,
+            "difficulty": "medium"
+          },
+          {
+            "key": 2,
+            "won": false,
+            "completed": false,
+            "size": 2,
+            "points": 26,
+            "difficulty": "easy"
+          }
+        ]
+      }
+    },
+    {
+      "key": 1,
+      "id": "fl",
+      "name": "Florida",
+      "electoralVotes": 29,
+      "playerScore": 0,
+      "opponentScore": 0,
+      "level": {
+        "type": "trivia",
+        "districts": [
+          {
+            "key": 0,
+            "won": false,
+            "completed": false,
+            "size": 1,
+            "points": 31,
+            "difficulty": "hard"
+          },
+          {
+            "key": 1,
+            "won": false,
+            "completed": false,
+            "size": 2,
+            "points": 23,
+            "difficulty": "medium"
+          },
+          {
+            "key": 2,
+            "won": false,
+            "completed": false,
+            "size": 2,
+            "points": 20,
+            "difficulty": "medium"
+          },
+          {
+            "key": 3,
+            "won": false,
+            "completed": false,
+            "size": 2,
+            "points": 14,
+            "difficulty": "easy"
+          },
+          {
+            "key": 4,
+            "won": false,
+            "completed": false,
+            "size": 2,
+            "points": 12,
+            "difficulty": "easy"
+          }
+        ]
+      }
+    },
+    {
+      "key": 2,
+      "id": "ia",
+      "name": "Iowa",
+      "electoralVotes": 6,
+      "playerScore": 0,
+      "opponentScore": 0,
+      "level": {
+        "type": "trivia",
+        "districts": [
+          {
+            "key": 0,
+            "won": false,
+            "completed": false,
+            "size": 1,
+            "points": 46,
+            "difficulty": "hard"
+          },
+          {
+            "key": 1,
+            "won": false,
+            "completed": false,
+            "size": 2,
+            "points": 30,
+            "difficulty": "medium"
+          },
+          {
+            "key": 2,
+            "won": false,
+            "completed": false,
+            "size": 2,
+            "points": 24,
+            "difficulty": "easy"
+          }
+        ]
+      }
+    },
+    {
+      "key": 3,
+      "id": "nv",
+      "name": "Nevada",
+      "electoralVotes": 6,
+      "playerScore": 0,
+      "opponentScore": 0,
+      "level": {
+        "type": "trivia",
+        "districts": [
+          {
+            "key": 0,
+            "won": false,
+            "completed": false,
+            "size": 1,
+            "points": 43,
+            "difficulty": "hard"
+          },
+          {
+            "key": 1,
+            "won": false,
+            "completed": false,
+            "size": 2,
+            "points": 31,
+            "difficulty": "medium"
+          },
+          {
+            "key": 2,
+            "won": false,
+            "completed": false,
+            "size": 2,
+            "points": 26,
+            "difficulty": "easy"
+          }
+        ]
+      }
+    },
+    {
+      "key": 4,
+      "id": "nh",
+      "name": "New Hampshire",
+      "electoralVotes": 4,
+      "playerScore": 0,
+      "opponentScore": 0,
+      "level": {
+        "type": "trivia",
+        "districts": [
+          {
+            "key": 0,
+            "won": false,
+            "completed": false,
+            "size": 1,
+            "points": 41,
+            "difficulty": "hard"
+          },
+          {
+            "key": 1,
+            "won": false,
+            "completed": false,
+            "size": 2,
+            "points": 37,
+            "difficulty": "medium"
+          },
+          {
+            "key": 2,
+            "won": false,
+            "completed": false,
+            "size": 2,
+            "points": 22,
+            "difficulty": "easy"
+          }
+        ]
+      }
+    },
+    {
+      "key": 5,
+      "id": "nc",
+      "name": "North Carolina",
+      "electoralVotes": 15,
+      "playerScore": 0,
+      "opponentScore": 0,
+      "level": {
+        "type": "trivia",
+        "districts": [
+          {
+            "key": 0,
+            "won": false,
+            "completed": false,
+            "size": 1,
+            "points": 42,
+            "difficulty": "hard"
+          },
+          {
+            "key": 1,
+            "won": false,
+            "completed": false,
+            "size": 3,
+            "points": 29,
+            "difficulty": "medium"
+          },
+          {
+            "key": 2,
+            "won": false,
+            "completed": false,
+            "size": 3,
+            "points": 16,
+            "difficulty": "easy"
+          },
+          {
+            "key": 3,
+            "won": false,
+            "completed": false,
+            "size": 3,
+            "points": 13,
+            "difficulty": "easy"
+          }
+        ]
+      }
+    },
+    {
+      "key": 6,
+      "id": "oh",
+      "name": "Ohio",
+      "electoralVotes": 18,
+      "playerScore": 0,
+      "opponentScore": 0,
+      "level": {
+        "type": "trivia",
+        "districts": [
+          {
+            "key": 0,
+            "won": false,
+            "completed": false,
+            "size": 1,
+            "points": 38,
+            "difficulty": "hard"
+          },
+          {
+            "key": 1,
+            "won": false,
+            "completed": false,
+            "size": 1,
+            "points": 23,
+            "difficulty": "medium"
+          },
+          {
+            "key": 2,
+            "won": false,
+            "completed": false,
+            "size": 3,
+            "points": 18,
+            "difficulty": "medium"
+          },
+          {
+            "key": 3,
+            "won": false,
+            "completed": false,
+            "size": 3,
+            "points": 12,
+            "difficulty": "easy"
+          },
+          {
+            "key": 4,
+            "won": false,
+            "completed": false,
+            "size": 3,
+            "points": 9,
+            "difficulty": "easy"
+          }
+        ]
+      }
+    },
+    {
+      "key": 7,
+      "id": "pa",
+      "name": "Pennsylvania",
+      "electoralVotes": 20,
+      "playerScore": 0,
+      "opponentScore": 0,
+      "level": {
+        "type": "trivia",
+        "districts": [
+          {
+            "key": 0,
+            "won": false,
+            "completed": false,
+            "size": 1,
+            "points": 35,
+            "difficulty": "hard"
+          },
+          {
+            "key": 1,
+            "won": false,
+            "completed": false,
+            "size": 2,
+            "points": 28,
+            "difficulty": "medium"
+          },
+          {
+            "key": 2,
+            "won": false,
+            "completed": false,
+            "size": 2,
+            "points": 22,
+            "difficulty": "medium"
+          },
+          {
+            "key": 3,
+            "won": false,
+            "completed": false,
+            "size": 2,
+            "points": 9,
+            "difficulty": "easy"
+          },
+          {
+            "key": 4,
+            "won": false,
+            "completed": false,
+            "size": 2,
+            "points": 6,
+            "difficulty": "easy"
+          }
+        ]
+      }
+    },
+    {
+      "key": 8,
+      "id": "va",
+      "name": "Virginia",
+      "electoralVotes": 13,
+      "playerScore": 0,
+      "opponentScore": 0,
+      "level": {
+        "type": "trivia",
+        "districts": [
+          {
+            "key": 0,
+            "won": false,
+            "completed": false,
+            "size": 1,
+            "points": 48,
+            "difficulty": "hard"
+          },
+          {
+            "key": 1,
+            "won": false,
+            "completed": false,
+            "size": 1,
+            "points": 27,
+            "difficulty": "medium"
+          },
+          {
+            "key": 2,
+            "won": false,
+            "completed": false,
+            "size": 2,
+            "points": 14,
+            "difficulty": "easy"
+          },
+          {
+            "key": 3,
+            "won": false,
+            "completed": false,
+            "size": 2,
+            "points": 11,
+            "difficulty": "easy"
+          }
+        ]
+      }
+    },
+    {
+      "key": 9,
+      "id": "wi",
+      "name": "Wisconsin",
+      "electoralVotes": 10,
+      "playerScore": 0,
+      "opponentScore": 0,
+      "level": {
+        "type": "trivia",
+        "districts": [
+          {
+            "key": 0,
+            "won": false,
+            "completed": false,
+            "size": 1,
+            "points": 35,
+            "difficulty": "hard"
+          },
+          {
+            "key": 1,
+            "won": false,
+            "completed": false,
+            "size": 3,
+            "points": 25,
+            "difficulty": "medium"
+          },
+          {
+            "key": 2,
+            "won": false,
+            "completed": false,
+            "size": 3,
+            "points": 25,
+            "difficulty": "medium"
+          },
+          {
+            "key": 3,
+            "won": false,
+            "completed": false,
+            "size": 3,
+            "points": 15,
+            "difficulty": "easy"
+          }
+        ]
+      }
+    }
+  ]
+}

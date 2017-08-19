@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import { FlatList, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { connect } from 'react-redux';
-
 import StateList from './../../components/StateList/StateList';
-
 import { pop, push } from './../../actions/navigation';
 import states from './../../fixtures/states.json';
 import stateList from './../../fixtures/main.json';
@@ -21,25 +19,42 @@ class State extends Component {
     return (
       <StateList
         item={item}
-        id={item.item.id}
+        id={item.item.key}
+        key={item.item.key}
         title={`Percentage Awarded: ${item.item.points}%`}
         onPressState={this._onPressItem.bind(this)}
       />
     );
   }
 
-  render() {
-    const state = stateList.states[this.props.navigation.state.params.id].id;
+  renderTriviaState(state) {
+    const stateId = state.id;
 
     return (
       <View style={styles.container}>
-        <FlatList
-          data={states[state]}
-          keyExtractor={item => item.id}
-          renderItem={this._renderItems.bind(this)}
-        />
-      </View>
+      <FlatList
+        data={states[stateId]}
+        renderItem={this._renderItems.bind(this)}
+      />
+    </View>
     );
+  }
+
+  renderState(state) {
+    // Render depending on type
+    switch(state.type) {
+      // In case of trivia
+      case 'trivia':
+      default:
+        return this.renderTriviaState(state);
+    }
+  }
+
+  render() {
+    const { states } = this.props;
+    const stateObject = states[this.props.navigation.state.params.id];
+
+    return this.renderState(stateObject);
   }
 }
 
@@ -50,7 +65,8 @@ const styles = StyleSheet.create({
 
 const mapStateToProps = state => {
   return {
-    name: state.player.name,
+    name: state.candidate.name,
+    states: state.election,
   };
 }
 

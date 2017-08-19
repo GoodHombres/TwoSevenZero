@@ -1,25 +1,26 @@
 import {
   SET_NAME,
   SET_PARTY,
-} from './../constants/player';
+} from './../constants/candidate';
 
 const initialState = {
-  name: null,
-  party: null,
+  name: 'Erick',
+  party: 'democratic',
+  elections: [],
 };
 
 /**
- * playerReducer - Player reducer
+ * candidateReducer - Candidate reducer
  *
  * @param {Object} state
  * @param {Object} action
  */
-function playerReducer(state = initialState, action) {
+function candidateReducer(state = initialState, action) {
   switch (action.type) {
-    // Set player name
+    // Set candidate name
     case SET_NAME:
       return { ...state, name: action.payload };
-    // Set player party
+    // Set candidate party
     case SET_PARTY:
       return { ...state, party: action.payload };
     default:
@@ -27,4 +28,4 @@ function playerReducer(state = initialState, action) {
   }
 }
 
-export default playerReducer;
+export default candidateReducer;

@@ -1,0 +1,23 @@
+-states: Object
+  -state: Object
+    -id: number
+    -name: string
+    -electoral votes: number
+    -user score
+    -oppo score
+    -level (trivia): object
+    -type: trivia|guess
+      - district (3-5) maybe 7 for cali
+        - pct: number
+        - difficulty: string easy|medium|hard
+        - width: number
+        - completed: boolean
+        - won: boolean true=player|false=oppo
+    -level (guess): object
+      - type: string text|img
+      - prompt: string text|src => <Text />|<Img />
+      - districts: [object]
+        - pct
+        - answer
+        - completed: boolean
+        - won: boolean true=player|false=oppo

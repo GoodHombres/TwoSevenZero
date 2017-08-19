@@ -23,7 +23,6 @@ class MainPage extends Component {
 
 const mapStateToProps = state => ({
   nav: state.mainNav,
-  party: state.player.party,
 });
 
 export default connect(mapStateToProps)(MainPage);

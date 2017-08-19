@@ -9,7 +9,7 @@ import {
   StyleSheet,
   View,
 } from 'react-native';
-import { setName, setParty } from './../../actions/player';
+import { setName, setParty } from './../../actions/candidate';
 import { setRoot } from './../../actions/navigation';
 
 // Local components
@@ -88,8 +88,8 @@ const styles = StyleSheet.create(css);
 
 const mapStateToProps = state => {
   return {
-    name: state.player.name,
-    party: state.player.party,
+    name: state.candidate.name,
+    party: state.candidate.party,
   };
 }
 

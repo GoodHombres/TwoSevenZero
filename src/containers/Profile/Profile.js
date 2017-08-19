@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Alert, ScrollView, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
 import { connect } from 'react-redux';
-import { setName, setParty } from './../../actions/player';
+import { setName, setParty } from './../../actions/candidate';
 import { setRoot } from './../../actions/navigation';
 import colors from './../../utils/colors';
 import capitalize from './../../utils/capitalize';
@@ -103,8 +103,8 @@ const styles = StyleSheet.create({
 
 const mapStateToProps = state => {
   return {
-    name: state.player.name,
-    party: state.player.party,
+    name: state.candidate.name,
+    party: state.candidate.party,
   };
 };
 

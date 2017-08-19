@@ -1,10 +1,10 @@
 import {
   SET_NAME,
   SET_PARTY,
-} from './../constants/player';
+} from './../constants/candidate';
 
 /**
- * setName - Sets the player's name
+ * setName - Sets the candidate's name
  *
  * @param {string} name
  */
@@ -16,7 +16,7 @@ export function setName(name) {
 }
 
 /**
- * setParty - Sets the player's party
+ * setParty - Sets the candidate's party
  *
  * @param {string} party
  */

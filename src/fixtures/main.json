@@ -1,94 +1,114 @@
 {
   "states": [
     {
-      "name": "Colorado",
-      "id": "colorado",
       "key": 0,
-      "delegates": 9,
+      "type": "trivia",
+      "id": "colorado",
+      "name": "Colorado",
       "icon": "map-us-co",
-      "score": 0,
-      "rivalScore": 0
+      "votePercentage": 0,
+      "electoralVotes": 9,
+      "opponentVotePercentage": 0,
+      "cards": []
     },
     {
+      "key": 1,
+      "type": "trivia",
       "name": "Florida",
       "id": "florida",
-      "key": 1,
-      "delegates": 29,
       "icon": "map-us-fl",
-      "score": 0,
-      "rivalScore": 0
+      "votePercentage": 0,
+      "electoralVotes": 29,
+      "opponentVotePercentage": 0,
+      "cards": []
     },
     {
-      "name": "Iowa",
-      "id": "iowa",
       "key": 2,
-      "delegates": 6,
+      "type": "trivia",
+      "id": "iowa",
+      "name": "Iowa",
       "icon": "map-us-ia",
-      "score": 0,
-      "rivalScore": 0
+      "votePercentage": 0,
+      "electoralVotes": 6,
+      "opponentVotePercentage": 0,
+      "cards": []
     },
     {
-      "name": "Nevada",
-      "id": "nevada",
       "key": 3,
-      "delegates": 6,
+      "type": "trivia",
+      "id": "nevada",
+      "name": "Nevada",
       "icon": "map-us-nv",
-      "score": 0,
-      "rivalScore": 0
+      "votePercentage": 0,
+      "electoralVotes": 6,
+      "opponentVotePercentage": 0,
+      "cards": []
     },
     {
-      "name": "New Hampshire",
-      "id": "new-hampshire",
       "key": 4,
-      "delegates": 4,
+      "type": "trivia",
+      "id": "new-hampshire",
+      "name": "New Hampshire",
       "icon": "map-us-nh",
-      "score": 0,
-      "rivalScore": 0
+      "votePercentage": 0,
+      "electoralVotes": 4,
+      "opponentVotePercentage": 0,
+      "cards": []
     },
     {
-      "name": "North Carolina",
-      "id": "north-carolina",
       "key": 5,
-      "delegates": 15,
+      "id": "north-carolina",
+      "type": "trivia",
+      "name": "North Carolina",
       "icon": "map-us-nc",
-      "score": 0,
-      "rivalScore": 0
+      "votePercentage": 0,
+      "electoralVotes": 15,
+      "opponentVotePercentage": 0,
+      "cards": []
     },
     {
-      "name": "Ohio",
-      "id": "ohio",
       "key": 6,
-      "delegates": 18,
+      "type": "trivia",
+      "id": "ohio",
+      "name": "Ohio",
       "icon": "map-us-oh",
-      "score": 0,
-      "rivalScore": 0
+      "votePercentage": 0,
+      "electoralVotes": 18,
+      "opponentVotePercentage": 0,
+      "cards": []
     },
     {
-      "name": "Pennsylvania",
-      "id": "pennsylvania",
       "key": 7,
-      "delegates": 20,
+      "type": "trivia",
+      "id": "pennsylvania",
+      "name": "Pennsylvania",
       "icon": "map-us-pa",
-      "score": 0,
-      "rivalScore": 0
+      "votePercentage": 0,
+      "electoralVotes": 20,
+      "opponentVotePercentage": 0,
+      "cards": []
     },
     {
-      "name": "Virginia",
-      "id": "virginia",
       "key": 8,
-      "delegates": 13,
+      "type": "trivia",
+      "id": "virginia",
+      "name": "Virginia",
       "icon": "map-us-va",
-      "score": 0,
-      "rivalScore": 0
+      "votePercentage": 0,
+      "electoralVotes": 13,
+      "opponentVotePercentage": 0,
+      "cards": []
     },
     {
-      "name": "Wisconsin",
-      "id": "wisconsin",
       "key": 9,
-      "delegates": 10,
+      "type": "trivia",
+      "id": "wisconsin",
+      "name": "Wisconsin",
       "icon": "map-us-wi",
-      "score": 0,
-      "rivalScore": 0
+      "votePercentage": 0,
+      "electoralVotes": 10,
+      "opponentVotePercentage": 0,
+      "cards": []
     }
   ]
 }

@@ -16,24 +16,24 @@ class App extends Component {
     super(props);
 
     this.state = {
-      ready: false,
+      ready: true,
     };
   }
 
   storeObserver;
 
   componentDidMount() {
-    this.storeObserver = store.subscribe(() => {
-      const { ready } = this.state;
+    // this.storeObserver = store.subscribe(() => {
+    //   const { ready } = this.state;
 
-      if (!ready && store.getState()._persist.rehydrated) {
-        this.setState({ ready: true });
-      }
-    });
+    //   if (!ready && store.getState()._persist.rehydrated) {
+    //     this.setState({ ready: true });
+    //   }
+    // });
   }
 
   componentWillUnmount() {
-    this.storeObserver.unsubscribe();
+    // this.storeObserver.unsubscribe();
   }
 
   render() {
