@@ -7,8 +7,8 @@ import {
 } from './../constants/candidate';
 
 const initialState = {
-  name: 'Erick',
-  party: 'democratic',
+  name: null,
+  party: null,
   electoralVotes: 0,
   opponentElectoralVotes: 0,
 };
