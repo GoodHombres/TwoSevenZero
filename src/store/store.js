@@ -15,9 +15,9 @@ const config = {
 const reducer = persistReducer(config, appReducer);
 
 // Create store
-const store = createStore(reducer, applyMiddleware(thunk, ( __DEV__ && logger)));
+const store = createStore(appReducer, applyMiddleware(thunk, ( __DEV__ && logger)));
 
 // Persist store
-persistStore(store);
+// persistStore(store);
 
 export default store;

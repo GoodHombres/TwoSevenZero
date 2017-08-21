@@ -10,7 +10,6 @@ import colors from './../../utils/colors';
 
 class ButtonLink extends Component {
   _onPress() {
-    console.log(this.props);
     const { disabled, onPressButton } = this.props;
 
     !disabled && onPressButton();

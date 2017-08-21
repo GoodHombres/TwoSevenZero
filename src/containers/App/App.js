@@ -1,40 +1,40 @@
 import { Provider } from 'react-redux';
 import React, { Component } from 'react';
 import { Persistor } from 'redux-persist';
-
 import { StackNavigation } from 'react-navigation';
+
 // Store
 import store from './../../store/store';
 
 // Views
 import Loading from './../Loading/Loading';
-// import NavigationState from './../Navigation/Navigation';
 import AppNavigation from './../../views/AppNavigation/AppNavigation';
 
 class App extends Component {
+  // Store observer
+  storeObserver;
+
   constructor(props) {
     super(props);
 
     this.state = {
-      ready: false,
+      ready: true,
     };
   }
 
-  storeObserver;
+  // componentDidMount() {
+  //   this.storeObserver = store.subscribe(() => {
+  //     const { ready } = this.state;
 
-  componentDidMount() {
-    this.storeObserver = store.subscribe(() => {
-      const { ready } = this.state;
+  //     if (!ready && store.getState()._persist.rehydrated) {
+  //       this.setState({ ready: true });
+  //     }
+  //   });
+  // }
 
-      if (!ready && store.getState()._persist.rehydrated) {
-        this.setState({ ready: true });
-      }
-    });
-  }
-
-  componentWillUnmount() {
-    this.storeObserver.unsubscribe();
-  }
+  // componentWillUnmount() {
+  //   this.storeObserver.unsubscribe();
+  // }
 
   render() {
     const { ready } = this.state;

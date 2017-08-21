@@ -1,8 +1,14 @@
 import React, { Component } from 'react';
 import { Alert, ScrollView, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
 import { connect } from 'react-redux';
-import { setName, setParty } from './../../actions/player';
+
+// Actions
+import { resetTrivia } from './../../actions/trivia';
 import { setRoot } from './../../actions/navigation';
+import { resetMap } from './../../actions/electoral-map';
+import { setName, setParty, resetCandidacy } from './../../actions/candidate';
+
+// Utility
 import colors from './../../utils/colors';
 import capitalize from './../../utils/capitalize';
 
@@ -14,7 +20,7 @@ class Profile extends Component {
   }
 
   resetGame() {
-    const { changeName, resetGame, switchParty } = this.props;
+    const { resetCandidacy, resetElection, resetGame, resetTrivia } = this.props;
 
     Alert.alert(
       'Reset Game?',
@@ -28,10 +34,14 @@ class Profile extends Component {
         {
           text: 'OK',
           onPress: () => {
-            // Reset name and party
+            // Reset Trivia
+            resetTrivia();
+            // Reset election
+            resetElection();
+            // Reset candidacy
+            resetCandidacy();
+            // Take us to root
             resetGame();
-            changeName(null);
-            switchParty(null);
           },
         },
       ]
@@ -103,15 +113,18 @@ const styles = StyleSheet.create({
 
 const mapStateToProps = state => {
   return {
-    name: state.player.name,
-    party: state.player.party,
+    name: state.candidate.name,
+    party: state.candidate.party,
   };
 };
 
 const mapDispatchToProps = dispatch => {
   return {
+    resetTrivia: () => dispatch(resetTrivia()),
     resetGame: () => dispatch(setRoot('Start')),
     changeName: (name) => dispatch(setName(name)),
+    resetElection: () => dispatch(resetMap()),
+    resetCandidacy: () => dispatch(resetCandidacy()),
     switchParty: (party) => dispatch(setParty(party)),
   };
 };
