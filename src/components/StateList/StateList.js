@@ -13,10 +13,13 @@ class StateList extends PureComponent {
   render() {
     const { id, item } = this.props;
 
+    const playerWon = (item.playerScore > 50) ? '✔' : null;
+    const rivalWon = (item.opponentScore > 50) ? '✖️' : null;
+
     return (
       <TouchableOpacity style={styles.container} onPress={this._onPress.bind(this)}>
         <View style={styles.label}>
-          <Text style={styles.text}>{item.name}</Text>
+          <Text style={styles.text}>{item.name} {playerWon} {rivalWon}</Text>
           <Text style={styles.description}>Score: {item.playerScore}%</Text>
           <Text style={styles.description}>Electoral Votes: {item.electoralVotes}</Text>
         </View>

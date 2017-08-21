@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { Alert, FlatList, StyleSheet, Text, TextInput, View } from 'react-native';
+import { Alert, FlatList, ScrollView, StyleSheet, Text, TextInput, View } from 'react-native';
 
 // Components
 import StateList from './../../components/StateList/StateList';
@@ -42,14 +42,25 @@ class Home extends Component {
   }
 
   render() {
-    const { name, party, electoralMap } = this.props;
+    const { name, party, electoralVotes, electoralMap, rivalElectoralVotes } = this.props;
 
     return (
       <View style={styles.container}>
-        <FlatList
-          data={electoralMap.states}
-          renderItem={this._renderStates.bind(this)}
-        />
+        <ScrollView>
+          <View style={[styles.header, { backgroundColor: colors[party] }]}>
+            <View style={styles.headerBar}>
+              <Text style={styles.scoreText}>You: {electoralVotes} / 270</Text>
+              <Text style={styles.scoreText}>Rival: {rivalElectoralVotes} / 270</Text>
+            </View>
+            <View style={styles.titleContainer}>
+              <Text style={styles.title}>270</Text>
+            </View>
+          </View>
+          <FlatList
+            data={electoralMap.states}
+            renderItem={this._renderStates.bind(this)}
+          />
+        </ScrollView>
       </View>
     );
   }
@@ -60,6 +71,32 @@ const styles = StyleSheet.create({
     backgroundColor: colors.background,
     flex: 1,
   },
+  header: {
+    height: 300,
+    width: '100%',
+    padding: 20,
+    // justifyContent: 'center',
+  },
+  headerBar: {
+    width: '100%',
+    alignItems: 'center',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+  },
+  titleContainer: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  scoreText: {
+    color: colors.background,
+  },
+  title: {
+    fontSize: 48,
+    fontWeight: 'bold',
+    textAlign: 'center',
+    color: colors.background,
+  },
   item: {
     color: colors.foreground,
   },
@@ -68,8 +105,10 @@ const styles = StyleSheet.create({
 const mapStateToProps = state => {
   return {
     name: state.candidate.name,
-    party: state.candidate.party,
     electoralMap: state.election,
+    party: state.candidate.party,
+    electoralVotes: state.candidate.electoralVotes,
+    rivalElectoralVotes: state.candidate.opponentElectoralVotes,
   };
 }
 
