@@ -6,7 +6,7 @@ const initialState = data;
 function triviaReducer(state = initialState, action) {
   switch (action.type) {
     case RESET_TRIVIA:
-      return initialState;
+      return { ...initialState };
     case REMOVE_TRIVIA:
       // Based on difficulty
       switch (action.difficulty) {

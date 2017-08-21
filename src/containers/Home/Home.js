@@ -1,8 +1,14 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Alert, FlatList, StyleSheet, Text, TextInput, View } from 'react-native';
-import { push } from './../../actions/mainNavigation';
+
+// Components
 import StateList from './../../components/StateList/StateList';
+
+// Actions
+import { push } from './../../actions/mainNavigation';
+
+// Utils
 import colors from './../../utils/colors';
 
 class Home extends Component {
@@ -18,7 +24,7 @@ class Home extends Component {
     const { goTo } = this.props;
     switch (state.level.type) {
       case 'trivia':
-        goTo('TriviaState', { state });
+        goTo('TriviaState', { title: state.name, stateId: state.key });
         break;
       default:
           Alert.alert('Unknown level type.');
@@ -37,7 +43,7 @@ class Home extends Component {
 
   render() {
     const { name, party, electoralMap } = this.props;
-    console.log(electoralMap);
+
     return (
       <View style={styles.container}>
         <FlatList

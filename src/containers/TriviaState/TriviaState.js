@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Alert, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { ActivityIndicator, Alert, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { connect } from 'react-redux';
 import TriviaLevelCard from './../../components/TriviaLevelCard/TriviaLevelCard';
 import Scoreboard from './../../components/Scoreboard/Scoreboard';
@@ -8,12 +8,46 @@ import colors from './../../utils/colors';
 
 class TriviaState extends Component {
   static navigationOptions = ({ navigation }) => ({
-    title: navigation.state.params.state.name,
+    title: navigation.state.params.title,
   });
 
+  constructor(props) {
+    super(props);
+
+    // Hold current U.S. State in our state
+    this.state = {
+      state: null,
+    };
+  }
+
+  componentDidMount() {
+    const { navigation, states } = this.props;
+    const { stateId } = navigation.state.params;
+
+    // Get the current U.S. state by its key
+    const state = states.states.filter((s) => s.key === stateId)[0];
+
+    // Set U.S. state
+    this.setState({state});
+  }
+
+  componentDidUpdate() {
+    const { state } = this.state;
+    const { states } = this.props;
+
+    // Get the new state
+    const newState = states.states.filter((s) => s.key === state.key)[0];
+
+    // If new U.S. state is different from old U.S. state
+    if (newState !== state) {
+      // Update U.S. state
+      this.setState({ state: newState });
+    }
+  }
+
   _onPressItem(item) {
-    const { goTo, navigation } = this.props;
-    const { state } = navigation.state.params;
+    const { goTo } = this.props;
+    const { state } =this.state;
 
     if (item.completed) {
       let message = '';
@@ -27,9 +61,8 @@ class TriviaState extends Component {
       // Show alert
       Alert.alert('District completed', message);
     } else {
-      console.log('GOTO LEVEL');
       // Not complete, go to trivia level
-      goTo('TriviaLevel', { district: item, state: state });
+      goTo('TriviaLevel', { districtId: item.key, stateId: state.key });
     }
   }
 
@@ -48,19 +81,20 @@ class TriviaState extends Component {
 
   render() {
     const { states, party, navigation } = this.props;
-    const { districts } = navigation.state.params.state.level;
+    const { state } = this.state;
 
-    return (
+    // If state load page otherwise load spinner
+    return (state) ? (
       <View style={styles.container}>
         <Scoreboard
           party={party}
-          state={navigation.state.params.state}
+          state={state}
         />
         <View style={styles.districtContainer}>
-        { districts.map(district => this._renderItems(district)) }
+        { state.level.districts.map(district => this._renderItems(district)) }
         </View>
       </View>
-    );
+    ) : (<ActivityIndicator />);
   }
 }
 

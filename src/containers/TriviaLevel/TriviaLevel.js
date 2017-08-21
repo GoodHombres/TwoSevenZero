@@ -1,13 +1,33 @@
 import React, { Component } from 'react';
 import { ActivityIndicator, Alert, ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { connect } from 'react-redux';
+
+// Components
 import TriviaLevelCard from './../../components/TriviaLevelCard/TriviaLevelCard';
 import Scoreboard from './../../components/Scoreboard/Scoreboard';
+
+// Actions
 import { pop, push } from './../../actions/navigation';
 import { removeTrivia } from './../../actions/trivia';
+import {
+  resetMap,
+  winDistrict,
+  increaseScore,
+  completeDistrict,
+  increaseOpponentScore,
+} from './../../actions/electoral-map';
+import {
+  increaseElectoralVotes,
+  increaseOpponentElectoralVotes,
+} from './../../actions/candidate';
+
+// Utility
 import colors from './../../utils/colors';
 import getRandomArrayIndex from './../../utils/getRandomArrayIndex';
 import shuffle from './../../utils/shuffle';
+
+// Styles
+import { css } from './styles';
 
 class TriviaLevel extends Component {
   static navigationOptions = ({ navigation }) => ({
@@ -18,23 +38,58 @@ class TriviaLevel extends Component {
     super(props);
 
     this.state = {
-      locked: false,
+      state: null,
       trivia: null,
-      responses: [],
+      district: null,
+      responses: null,
     };
 
     this.getRandomTrivia = this.getRandomTrivia.bind(this);
   }
 
   componentDidMount() {
-    const { navigation, removeTrivia } = this.props;
-    const { district } = navigation.state.params;
+    const { states, navigation, removeTrivia } = this.props;
+    const { stateId, districtId } = navigation.state.params;
+
+    // Get the state from props using navigation param
+    const state = states.states.filter((s) => s.key === stateId)[0];
+
+    // Get the district from the state using navigation param
+    const district = state.level.districts.filter((d) => d.key === districtId)[0];
+
+    // Get random trivia based on district difficulty
     const trivia = this.getRandomTrivia(district.difficulty);
 
+    // Shuffle the responses
+    const responses = shuffle(trivia.responses);
+
+    // Remove trivia from our list, so we don't use it again
     removeTrivia(district.difficulty, trivia.id);
 
     // Set trivia
-    this.setState({ trivia, responses: shuffle(trivia.responses) });
+    this.setState({
+      state,
+      trivia,
+      district,
+      responses,
+    });
+  }
+
+  componentDidUpdate() {
+    const { states } = this.props;
+    const { state, district } = this.state;
+
+    // Get state from new props
+    const newState = states.states.filter((s) => s.key === state.key)[0];
+
+    // Get district from new props
+    const newDistrict = newState.level.districts.filter((d) => d.key === district.key)[0];
+
+    // If district is updated
+    if (newDistrict !== district) {
+      // Update district
+      this.setState({ district: newDistrict });
+    }
   }
 
   getRandomTrivia(difficulty) {
@@ -48,27 +103,55 @@ class TriviaLevel extends Component {
   }
 
   onPressResponse(response) {
-    console.log(`Response is correct? ${response.correct}`);
+    const { state, district } = this.state;
+    const {
+      winState,
+      loseState,
+      winDistrict,
+      increaseScore,
+      completeDistrict,
+      increaseOpponentScore, } = this.props;
 
-    // If response is correct
-    // Otherwise
-    this.setState({
-      locked: true,
-    });
+    // If response if correct
+    if (response.correct) {
+      // Set U.S. state as won
+      winDistrict(state.key, district.key);
+      // Increase player score by district points
+      increaseScore(state.key, district.points);
+
+      // If current player score plus points > 50, then player wins state electoral votes
+      ((state.playerScore + district.points) > 50) && winState(state.electoralVotes);
+    } else {
+      // Otherwise increase opponent score by district points
+      increaseOpponentScore(state.key, district.points);
+
+      // If opponent score surpasses 50 then they win the state's electoral votes
+      ((state.opponentScore + district.points) > 50) && loseState(state.electoralVotes);
+    }
+
+    // Mark district as completed
+    completeDistrict(state.key, district.key);
   }
 
   renderResponse(response, index) {
-    const { party } = this.props;
-    const { locked } = this.state;
+    const { party, navigation } = this.props;
+    const { district } = this.state;
 
     return (
       <TouchableOpacity
-        disabled={locked}
-        style={[styles.choice, { backgroundColor: (locked) ? colors.light :  colors[party] }]}
         key={index}
+        disabled={district.completed}
         onPress={() => { this.onPressResponse(response) }}
+        style={[styles.choice, { backgroundColor: (district.completed) ? colors.light :  colors[party] }]}
       >
-        <Text style={[styles.choiceText, (locked) ? { color: (response.correct) ? colors.green : colors.red }: {} ]}>{ response.text }</Text>
+        <Text
+          style={[
+            styles.choiceText,
+            (district.completed) ? { color: (response.correct) ? colors.green : colors.red }: {}
+          ]}
+        >
+          { response.text }
+        </Text>
       </TouchableOpacity>
     );
   }
@@ -76,6 +159,7 @@ class TriviaLevel extends Component {
   render() {
     const { trivia, responses } = this.state;
 
+    // If trivia has been retrieved render page otherwise show loading
     return (trivia) ? (
       <View style={styles.container}>
         <ScrollView>
@@ -98,49 +182,7 @@ class TriviaLevel extends Component {
   }
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: colors.background,
-  },
-  triviaContainer: {
-    alignSelf: 'center',
-    width: '90%',
-    maxWidth: 500,
-  },
-  promptContainer: {
-    padding: 20,
-    marginTop: 20,
-    borderRadius: 4,
-    maxHeight: 250,
-    backgroundColor: colors.light,
-  },
-  category: {
-    fontSize: 14,
-    color: colors.gray,
-    textAlign: 'center',
-  },
-  question: {
-    fontSize: 20,
-    marginTop: 10,
-    marginBottom: 10,
-    textAlign: 'center',
-  },
-  choicesContainer: {
-    marginTop: 60,
-  },
-  choice: {
-    padding: 20,
-    borderRadius: 4,
-    marginBottom: 20,
-    backgroundColor: colors.light,
-  },
-  choiceText: {
-    fontSize: 18,
-    textAlign: 'center',
-    color: colors.background,
-  },
-});
+const styles = StyleSheet.create(css);
 
 const mapStateToProps = state => {
   return {
@@ -153,7 +195,13 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
   return {
+    increaseOpponentScore: (stateId, districtId, points) => dispatch(increaseOpponentScore(stateId, districtId, points)),
+    increaseScore: (stateId, districtId, points) => dispatch(increaseScore(stateId, districtId, points)),
+    completeDistrict: (stateId, districtId) => dispatch(completeDistrict(stateId, districtId)),
+    winDistrict: (stateId, districtId) => dispatch(winDistrict(stateId, districtId)),
     removeTrivia: (difficulty, id) => dispatch(removeTrivia(difficulty, id)),
+    loseState: (votes) => dispatch(increaseOpponentElectoralVotes(votes)),
+    winState: (votes) => dispatch(increaseElectoralVotes(votes)),
     goBack: () => dispatch(pop()),
   };
 };

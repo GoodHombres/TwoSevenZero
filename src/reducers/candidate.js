@@ -1,12 +1,16 @@
 import {
   SET_NAME,
   SET_PARTY,
+  RESET_CANDIDACY,
+  INCREASE_ELECTORAL_VOTES,
+  INCREASE_OPPONENT_ELECTORAL_VOTES,
 } from './../constants/candidate';
 
 const initialState = {
   name: 'Erick',
   party: 'democratic',
-  elections: [],
+  electoralVotes: 0,
+  opponentElectoralVotes: 0,
 };
 
 /**
@@ -23,6 +27,12 @@ function candidateReducer(state = initialState, action) {
     // Set candidate party
     case SET_PARTY:
       return { ...state, party: action.payload };
+    case INCREASE_ELECTORAL_VOTES:
+      return { ...state, electoralVotes: (state.electoralVotes + action.payload) };
+    case INCREASE_OPPONENT_ELECTORAL_VOTES:
+      return { ...state, opponentElectoralVotes: (state.opponentElectoralVotes + action.payload) };
+    case RESET_CANDIDACY:
+      return { ...initialState };
     default:
       return state;
   }
